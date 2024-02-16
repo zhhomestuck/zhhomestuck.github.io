@@ -44,9 +44,15 @@ jobs:
       # - name: List rendered posts and pages
       #   run: ls ./_site/p
       - name: Run postprocess scripts
-        run: python3 ./scripts/postprocess.py && python3 ./scripts/index_updater.py && python3 ./scripts/write_flash_index.py
+        run: |
+          python3 ./scripts/postprocess.py
+          python3 ./scripts/index_updater.py
+          python3 ./scripts/write_flash_index.py
       - name: Move info pages to root
-        run: sudo mv -t ./_site ./_site/p/infos/* ./_site/p/index.html ./_site/p/404.html && sudo rm -r ./_site/p/infos 
+        run: |
+          sudo mv -t ./_site ./_site/p/infos/* ./_site/p/404.html
+          sudo rm -r ./_site/p/infos
+          sudo rm ./_site/p/index.html 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
 
