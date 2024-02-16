@@ -1,0 +1,32 @@
+﻿<script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="storyfiles/hs2/05305/Sburb.min.js" type="text/javascript"></script>
+<script src="/assets/manifest-ui-fce0378923b7c1d035a43aa61190214b6e24a8ccde18063f11e889fdfd14d6fd.js"></script>
+<script src="/assets/manifest-ads-story-bb655d0d4a39fa37ec81d7ce33cd9301f16d0c2c3e612a16bf926f71b343dd4e.js"></script>
+<script>
+$(document).ready(function() {
+    // Make content area responsive during preload
+
+    var $content_container = $("#content_container");
+    var $anim_container    = $("#animation_container");
+    var $_preload_div_     = $("#_preload_div_");
+    var w = $anim_container.width(), h = $anim_container.height();
+    var iw = $content_container.width(), ih = $content_container.height();
+    var pw = $_preload_div_.width(), ih = $_preload_div_.height();
+    var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1, psRatio=1;;
+
+    if ($.browser.mobile === true) {
+      $anim_container.width(w*xRatio+'px');
+      $anim_container.height(h*xRatio+'px');
+    } else {
+      $_preload_div_.css('left', ((iw-(pw))/2)+'px');
+    }
+
+});
+
+</script>
+<div class="mar-x-auto disp-bl bg-hs-gray" id="content_container" style="max-width:650px;">
+<h2 class="pad-t-md pad-x-lg--md type-center type-hs-header line-tight">[S][A6I3] ==&gt;</h2>
+<div class="pad-t-md">
+<div id="JterniaDeploy"></div>
+</div>
+</div>

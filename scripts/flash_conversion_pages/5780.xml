@@ -1,0 +1,53 @@
+﻿<script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/assets/createjs.min-8a3c3e7a3d0a0049630c829b71652833e827ec837da2506b4503fcfb670e1bc9.js"></script>
+<script src="/assets/glowfilter.min-b2d71dc70203d784635ec4f157fda31b5943155a18a74ff44454ea61c1a6b17a.js"></script>
+<script src="/assets/gsap/plugins/EaselPlugin.min-7b39add3c5d5c9595472a80179ed328187f31ceff2eac646d66a9dcff2797fa0.js"></script>
+<script src="/assets/gsap/TweenLite.min-5e942b2a54af3190383c2b0af228108e9aa0d9a18486fe6305c0d7c79e462c07.js"></script>
+<script src="/assets/hs2/05777-5d13c178daf1102c13b9c45fc97dbb5f033d6b8e3029c2dcdb6e6e4a766cc890.js"></script>
+<script src="/assets/manifest-ui-fce0378923b7c1d035a43aa61190214b6e24a8ccde18063f11e889fdfd14d6fd.js"></script>
+<script src="/assets/manifest-ads-story-bb655d0d4a39fa37ec81d7ce33cd9301f16d0c2c3e612a16bf926f71b343dd4e.js"></script>
+<script>
+$(document).ready(function() {
+  var $content_container = $("#content_container");
+  var $anim_container = $("#animation_container");
+  var $header_container = $("#header-container");
+  var $_preload_div_ = $("#_preload_div_");
+  var w = $anim_container.width(), h = $anim_container.height();
+  var iw = $content_container.width(), ih = $content_container.height();
+  var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1, psRatio=1;
+  if (iw < 950) {
+    if (iw > 714) {
+      sRatio = 1;
+      psRatio = 1;
+    } else {
+      sRatio = iw/714;
+      psRatio = 0.91072;
+    }
+  }	else {
+    sRatio = xRatio;
+  }
+
+  $anim_container.width(w*sRatio+'px');
+  $anim_container.height(h*sRatio+'px');
+  $_preload_div_.width(iw*psRatio+'px');
+  $_preload_div_.height(ih*psRatio+'px');
+  $_preload_div_.css('left', ((iw-(iw*psRatio))/2)+'px');
+
+  if ($.browser.mobile === true || iw < 750) {
+  } else {
+    //$header_container.hide();
+  }
+
+});
+
+</script>
+<div class="mar-x-auto disp-bl bg-hs-gray pos-r" id="content_container" style="width:100%; max-width:950px; overflow:hidden;">
+<div class="pos-r mar-t-0">
+<div class="bg-white pos-r" id="animation_container" style="width:950px; height:1178px; overflow:hidden;">
+<canvas class="bg-white" height="1178" id="canvas" style="position: absolute; display: none;" width="950"></canvas>
+<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:950px; height:1178px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id="_preload_div_" style="position:absolute; top:0px; display: block; text-align: center;"><img id="_preload_img_" src="https://www.homestuck.com/images/storyfiles/hs2/_preloader.gif" style="vertical-align: middle; max-height: 100%"/></div>
+</div>
+</div>

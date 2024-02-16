@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- JQuery -->
+    <script src='https://code.jquery.com/jquery-1.11.3.min.js' type='text/javascript'></script>
+    <script src="../createjs.min.js"></script>
+    <script src="../glowfilter.min.js"></script>
+    <script src="../gsap/plugins/EaselPlugin.min.js"></script>
+    <script src="../gsap/TweenLite.min.js"></script>
+    <script src="06276.js"></script>
+    <script src='/Viz_AC_RunActiveContent.js' type='text/javascript'></script>    
+  </head>
+  <body style="margin: 0;" onload="init();">
+    <script>
+      $(document).ready(function() {
+        var $content_container = $("#content_container");
+        var $anim_container = $("#animation_container");
+        var $header_container = $("#header-container");
+        var $_preload_div_ = $("#_preload_div_");
+        var w = $anim_container.width(), h = $anim_container.height();
+        var iw = $content_container.width(), ih = $content_container.height();
+        var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1, psRatio=1;
+        if (iw < 950) {
+          if (iw > 714) {
+            sRatio = 1;
+            psRatio = 1;
+          } else {
+            sRatio = iw/714;
+            psRatio = 0.91072;
+          }
+        }	else {
+          sRatio = xRatio;
+        }
+
+          $anim_container.width(w*sRatio+'px');
+          $anim_container.height(h*sRatio+'px');
+          $_preload_div_.width(iw*psRatio+'px');
+          $_preload_div_.height(ih*psRatio+'px');
+          $_preload_div_.css('left', ((iw-(iw*psRatio))/2)+'px');
+          });
+    </script>
+  <!--[if lt IE 8]><p class="browserupgrade">您使用的瀏覽器過舊</p><![endif]-->
+    <div id="content_container" style="max-width:950px; width:100%; overflow:hidden;">
+      <div id="animation_container" style="width:950px; height:750px; overflow:hidden;">
+        <canvas id="canvas" width="950" height="750" style="position: absolute; display: none;"></canvas>
+        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:950px; height:750px; position: absolute; left: 0px; top: 0px; display: none;">
+        </div>
+      </div>
+      <div id='_preload_div_' style='position:absolute; top:0; left:0; display: block; text-align: center;'><img src="../_preloader.gif" style='vertical-align: middle; max-height: 100%'/></div>
+    </div>
+    <noscript>[您的瀏覽器不支援Javascript]</noscript>
+  </body>
+</html>

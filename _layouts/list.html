@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+{% include head.html title=page.title %}
+  <body>
+    <div class="header">{% include navbar.html %}
+    </div>
+    <div class="content">
+      <div class="content-inner">
+        <div class="page">
+          <div class="pagehead">
+            {{page.title}}
+          </div>
+          <div class="pagebody">
+            <br />
+            <div>
+              {{page.content | remove: '<div><div id="no-markdown">' | remove: '<!-- end of no markdown --></div>'}}<br />
+              <br />
+            </div>
+            <div style="overflow-x: hidden; padding: 0; font-size: 13px; text-align: left; white-space: nowrap; line-height: 15px;">
+特殊頁:<br />
+{% for s_page in site.pages %} {{ s_page.url }} - <a href="{{ s_page.url | prepend: '/p' }}">{{ s_page.title }}</a><br />{% endfor %}
+<br />
+本文:<br />
+{% for post in site.posts %} {{ post.url }} - <a href="{{ post.url | prepend: '/p' }}">{{ post.title }}</a><br />{% endfor %}
+            </div>
+          </div>
+        </div>
+        {% include contributer.html %}
+      </div>
+      <div class="footer-bannerframe">
+        <div>
+          HOMESTUCK TRADITIONAL CHINESE TRANSLATION
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+{% include head.html title=page.title %}
+  <body>
+    <div class="header">{% include navbar.html %}
+    </div>
+    <div class="content">
+      <div class="content-inner">
+        <div class="page">
+          <div class="pagehead">
+            {{page.title}}
+          </div>
+          <div class="pagebody">
+            {{page.content  | remove: '<p>' | remove: '</p>' | remove: '<div id="no-markdown">' | remove: '<!-- end of no markdown --></div>' }}
+          </div>
+          <div class="pagefoot">
+          </div>
+        </div>
+        {% include contributer.html %}
+      </div>
+      <div class="footer-bannerframe">
+        <div>
+          HOMESTUCK TRADITIONAL CHINESE TRANSLATION
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      makeSpoilerLog();
+      flashWarning();
+    </script>
+  </body>
+</html>

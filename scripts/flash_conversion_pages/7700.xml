@@ -1,0 +1,42 @@
+﻿<script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/assets/createjs.min-8a3c3e7a3d0a0049630c829b71652833e827ec837da2506b4503fcfb670e1bc9.js"></script>
+<script src="/assets/glowfilter.min-b2d71dc70203d784635ec4f157fda31b5943155a18a74ff44454ea61c1a6b17a.js"></script>
+<script src="/assets/gsap/plugins/EaselPlugin.min-7b39add3c5d5c9595472a80179ed328187f31ceff2eac646d66a9dcff2797fa0.js"></script>
+<script src="/assets/gsap/TweenLite.min-5e942b2a54af3190383c2b0af228108e9aa0d9a18486fe6305c0d7c79e462c07.js"></script>
+<script src="/assets/hs2/07696-80ca2cba7e130715ea4f7822d5415de6e251e7c98957b70e34fa8b80d249156b.js"></script>
+<script src="/assets/manifest-ui-fce0378923b7c1d035a43aa61190214b6e24a8ccde18063f11e889fdfd14d6fd.js"></script>
+<script src="/assets/manifest-ads-story-bb655d0d4a39fa37ec81d7ce33cd9301f16d0c2c3e612a16bf926f71b343dd4e.js"></script>
+<script>
+$(document).ready(function() {
+    // Make content area responsive during preload
+
+    var $content_container = $("#content_container");
+    var $anim_container    = $("#animation_container");
+    var $_preload_div_     = $("#_preload_div_");
+    var w = $anim_container.width(), h = $anim_container.height();
+    var iw = $content_container.width(), ih = $content_container.height();
+    var pw = $_preload_div_.width(), ih = $_preload_div_.height();
+    var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1, psRatio=1;;
+
+    if ($.browser.mobile === true) {
+      $anim_container.width(w*xRatio+'px');
+      $anim_container.height(h*xRatio+'px');
+    } else {
+      $_preload_div_.css('left', ((iw-(pw))/2)+'px');
+    }
+
+});
+
+</script>
+<div class="mar-x-auto disp-bl bg-hs-gray" id="content_container" style="max-width:650px;">
+<h2 class="pad-t-md pad-x-lg--md type-center type-hs-header line-tight">[A6A6I5] ====&gt;</h2>
+<div class="pos-r pad-t-md">
+<div class="bg-white" id="animation_container" style="width:650px; 
+            height:650px;">
+<canvas height="650" id="canvas" style="position: absolute; display: none;" width="650"></canvas>
+<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:650px; height:650px; position: absolute; left: 0px; top: 0px; display: none;">
+</div>
+</div>
+<div id="_preload_div_" style="position:absolute; top:0; left:0; display: block; text-align: center;"><img src="https://www.homestuck.com/images/storyfiles/hs2/_preloader.gif" style="vertical-align: middle; max-height: 100%"/></div>
+</div>
+</div>

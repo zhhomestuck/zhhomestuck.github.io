@@ -1,0 +1,19 @@
+source:        .
+destination:   ./_site/p
+permalink:     /:title.html
+
+safe:          true
+encoding:      UTF-8
+exclude:       ["Gemfile*", "README*", "LICENSE*", "*.bat", "*.sh", "*.csv", "*.txt", "*.xml", "scripts"]
+markdown_ext:  "html"
+
+plugins:       [jekyll-paginate]
+paginate:      1
+
+collections:
+  pages:
+    output: true
+    permalink: /:title.html
+  infos:
+    output: true
+    # permalink: /infos/:title.html # should be in this path

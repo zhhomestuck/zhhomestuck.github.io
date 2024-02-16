@@ -1,0 +1,451 @@
+body {
+  font-family: Verdana, Arial, 'Microsoft JhengHei', 'Microsoft YaHei';
+  font-size: 15px;
+  color: #000000;
+  margin: 0px;
+  padding: 0 5px;
+  background-color: #535353;
+}
+div, .pagebody div img, table, td, p {
+  margin: 0; padding: 0;
+  border: none;
+  border-spacing: 0;
+  text-align: -webkit-center; text-align: center;
+}
+b {
+  font-weight:bold;
+}
+
+/* Navigation Bar */
+.header {
+  width: 100vw;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 3px 3px;
+  background-color: #5a5a5a;
+  box-sizing: border-box;
+}
+.mspanav {
+  font-family: Arial, 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 13px;
+}
+.mspanav a {
+  color: inherit;
+  margin: 3px;
+}
+.mspanav img {
+  vertical-align: middle;
+  border: 0;
+  padding-bottom: 3px;
+}
+
+/* Content Wrapper */
+.content {
+  width: 100vw;
+  max-width: 950px;
+  padding: 0;
+  margin: 0 auto;
+  background: #c6c6c6;
+  height: auto;
+}
+.content-inner {
+  max-width: 650px;
+  width: 100vw;
+  color: #000000;
+  margin: 0 auto;
+  padding-top: 7px;
+  background: #c6c6c6;
+  text-align: -webkit-center; text-align: center;
+}
+.page {
+  background-color: #eeeeee;
+}
+/* .no-markdown {
+  border: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* Pagehead */
+.pagehead {
+  padding: 15px 0 10px 0;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: Courier, Verdana, monospace;
+}
+
+/* Pagebody */
+.pagebody {
+  border-spacing: 0;
+  font-family: Courier, Verdana, monospace;
+}
+.pagebody img {
+  width: 100vw;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.pagebody span img, .pagebody div img {
+  width: auto;
+  margin: 0;
+}
+
+.pagebody div {
+  vertical-align: middle;
+  padding: 15px 20px 0 20px;
+}
+
+/* Note */
+div#note, div.note {
+  padding-top: 50px;
+  text-align: left;
+  font-size: 0.75em;
+}
+span#note, span.note {
+  color: inherit;
+  font-size: 0.7em;
+  vertical-align: text-top;
+  position: relative;
+  top: -2px;
+  text-align: left;
+}
+
+/* Log */
+div.log-outer {
+  border: 1px dashed gray;
+  padding: 1px 0;
+  box-sizing: border-box;
+}
+div#log-outer-outer, /* It shouldn't be as id but this is an year-old mistake */
+div.log-outer-outer {
+  padding: 0;
+  text-align: left;
+}
+div.log-outer div {
+  padding: 0;
+}
+div.log-outer button {
+  margin: 0 auto; 
+}
+div.log-inner {
+  width: 90%;
+  border: none;
+  text-align: left;
+  margin: 5px auto;
+  font-size: 1em;
+  line-height: 1.1;
+}
+div.authorlog {
+  margin: 0 5px;
+  border: 3px solid #c6c6c6;
+  padding: 15px 5%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.1;
+}
+div.log-inner img {
+  max-width: 90vw;
+  margin-left: -56px;
+  border: 0;
+}
+div.log-inner span img {
+  width: auto !important;
+  margin: 0;
+}
+.div-scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0; padding: 0;
+  height: 150px;
+  border: dashed 1px gray;
+  text-align: -webkit-center; text-align: center;
+}
+
+/* Flashes & Videos */
+.pagebody embed, .pagebody object {
+  margin-bottom: 15px;
+  width: 100vw;
+  max-width: 650px;
+  height: 69.23vw;
+  max-height: 450px;
+  /* 
+    This is standard panel size
+    If there are non-standard flash panel size
+    put these in post:
+      .mobile .pagebody embed, .pagebody embed {
+        height: (h/w ratio)vw; max-height: (actual height)px;
+      }
+      #o_flash-container {
+        padding-top: (h/w ratio)%;
+      } 
+  */
+}
+#o_flash-container {
+  /* created by Viz_AC_RunActiveContent.js */
+  /* the tag contained by this is a <embed> */
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 69.23076923076923% 0 0 0;
+}
+#cotent_container, #animation_container, #_preload_div_ {
+  /* for official HTML5 content */
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* for HTML5 animation */
+.pagebody iframe {
+  border: none;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+/* Pagefoot */
+.pagefoot {
+  padding: 20px 20px 10px 20px;
+  text-align: left;
+  font-size: 24px;
+  font-family: Verdana, Arial, 'Microsoft JhengHei',  'Microsoft YaHei', monospace;
+}
+.pagefoot a#newer-page-link {
+  line-height: 30px !important;
+}
+
+/* PFF */
+#pagefooter-option {
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+  padding-top: 30px;
+}
+#pagefooter-url {
+  font-size: 12px;
+}
+
+/* Quirk */
+#gamzee b {
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: -1px;
+}
+#arquius span img.shades {
+  background: url("/images/arquius_shades.png") no-repeat;
+  margin: 0;
+  padding: 8px 19px;
+  border: 0;
+}
+#arquius span span.glitch {
+  background: url("/images/arspritetxt_glitch.gif") repeat-x left center;
+  display: inline-block;
+}
+
+/* Footer & Bannerframe */
+#contribute, #contribute a {
+  text-align: -webkit-center; text-align: center;
+  text-decoration: none;
+  font: 11px Arial;
+  width: 100%;
+}
+.footer-bannerframe {
+  background-color: #535353;
+  margin: 0; 
+  height: 110px;
+  vertical-align: bottom;
+  font-family: Courier, Verdana, monospace;
+  font-weight: bold;
+  color: #000000;
+}
+.footer-bannerframe div {
+  padding-top: 10px;
+  font-size: 36px;
+}
+
+/* On screens that are 650px or less, set the smaller font sizes */
+@media screen and (max-width: 675px) {
+  body {
+    padding: 0;
+  }
+  .pagehead  {
+    font-size: 28px;
+  }
+  div.log-inner {
+    width: 98%;
+  }
+  .footer-bannerframe div  {
+    font-size: 24px;
+  }
+}
+
+/************
+SCRATCH PAGES
+*************/
+
+.scratch a:active, .scratch a:hover, .scratch a:link, .scratch a:visited {
+  color: #2cff4b;
+}
+.scratch,
+.scratch .header,
+.scratch .mspanav a,
+.scratch .pagebody div.log-outer {
+  background-color: #000;
+  color: #fff;
+}
+.scratch .content-inner,
+.scratch .page,
+.scratch .pagehead,
+.scratch .pagebody,
+.scratch .pagefoot,
+.scratch .pagefooter-option {
+  background-color: #0e4603;
+  color: #fff
+}
+.scratch .content,
+.scratch #contribute,
+.scratch .footer-bannerframe {
+  background-color: #082a00;
+  color: #fff
+}
+#s_header {
+  max-height: 175px;
+  height: 19vw; /* 175/940 */
+  background-size: 100% auto !important;
+  background-repeat: no-repeat !important;
+}
+#s_header_src {
+  display: none;
+}
+
+/************
+SBAHJ PAGES
+*************/
+
+body.sbahj {
+  font-family: 'Comic Sans MS', '華康海報體W12', '標楷體';
+}
+body.sbahj, .sbahj footer {
+  background-color:#0707ec;
+}
+.sbahj .content, .sbahj .footer-outer {
+  background-color:#fa00ec;
+}
+.sbahj .mspanav {
+  background-color:#000000;
+  font-size:14px;
+}
+.sbahj .content-inner, .sbahj .page {
+  background-color:#14ff23;
+}
+.sbahj .footer-bannerframe {
+  margin-top: 20px;
+  height: 120px;
+  background-image: url('/images/mspalogo_sbahj.jpg');
+  background-repeat: no-repeat;
+}
+
+/************
+TRICKSTER PAGES
+*************/
+
+body.trickster {
+  background-color: #5a5a5a;
+  background-image: url('/images/trickster_theme_bg.gif');
+}
+.trickster a {color: red;}
+.trickster .content {
+  padding-bottom: 30px;
+  background-image: url('/images/trickster_theme_bluetiles.gif');
+}
+.trickster div.header {
+  height: 23px;
+  background-image: url('/images/trickster_theme_headercandy.gif');
+  animation: trickster-scroll 20s linear infinite;
+  -webkit-animation: trickster-scroll 20s linear infinite;
+}
+.trickster  span.mspanav {
+  visibility: hidden;
+}
+.trickster .content-inner,
+.trickster .page,
+.trickster .pagehead,
+.trickster .pagebody,
+.trickster .pagefoot,
+.trickster .post-footer {
+  background-color: #ff73fd;
+  color: #f9fd6b;
+}
+.trickster .trickster-text {
+  -webkit-animation: trickster-glow 0.25s linear infinite;
+  animation: trickster-glow 0.25s linear infinite;
+}
+.trickster  footer,
+.trickster .footer-bannerframe {
+  background-color: transparent;
+  width: 100vw;
+  max-width: 950px;
+  margin: 0 auto;
+  color: #f9fd6b;
+}
+.trickster #trickster-banner-head-left {
+  float: left;
+  width: 110px;
+  height: 102px;
+  background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
+}
+.trickster #trickster-banner-head-right {
+  float: right;
+  width: 110px;
+  height: 102px;
+  background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
+}
+
+@-webkit-keyframes trickster-glow{0%{color: #fff6d1;}33%{color: #f0d1ff;}100%{color: #d1ffe3;}}
+@keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}
+@-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
+@keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
+
+/************
+X2COMBO PAGES
+*************/
+
+.x2combo  #x2combo-header{
+  height: 44px;
+  margin: 0px auto;
+  background: #232323 url('/images/act6act5act1x2combo.gif');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+.x2combo .header,
+.x2combo .content,
+.x2combo .footer-bannerframe {
+  width: 100vw;
+  max-width: 1620px; /* 150 + 650 + 20 + 650 + 150 */
+  min-width: 670px; /* 325 + 20 + 325 */
+}
+.x2combo .content-inner {
+  max-width: 1320px; /* 650 + 20 + 650 */
+}
+.x2combo .x2combo-td {
+  display: block;
+  font-size: 15px; /* somehow table tag changes font size */
+  max-width: 650px;
+  min-width: 325px;
+}
+.x2combo .x2combo-middle-padding {
+  padding: 0 10px;
+}
+.x2combo .x2combo-td .pagefoot {
+  margin-top: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+/* special effect of "next page" link text */
+.x2combo  #x2np {
+  display: inline-block;
+  text-decoration: underline;
+  -ms-transform: matrix(0.894, -0.5, 0.5, 0.894, 0, -16); /* IE 9 */
+  transform: matrix(0.894, -0.5, 0.5, 0.894, 0, -16); /* 0.5=26.565deg --> sin(26.565deg)=0.894  */
+}

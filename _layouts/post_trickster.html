@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+{% include head.html title=page.title %}
+  <body class="trickster">
+    <div class="header">
+    </div>
+    <div class="content">
+      <div class="content-inner">
+        <div class="page">
+          <div class="pagehead">
+            {{page.title}}
+          </div>
+          <div class="pagebody">
+            {{page.content | remove: '<p>' | remove: '</p>' | remove: '<div id="no-markdown">' | remove: '<!-- end of no markdown --></div>'}}
+          </div>
+          <div class="pagefoot">
+            {% if page.next.url %}
+              <span style="float: left;">&gt;&nbsp;</span>
+              <a id="newer-page-link" href=".{{ page.next.url }}">
+                <img src="../images/trickster_theme_sucker.gif">
+              </a>
+            {% endif %}
+            <div id="pagefooter-option">
+              {% if page.previous.url %}
+                <a id="older-page-link" href=".{{ page.previous.url }}">上一頁</a>
+              {% endif %}
+                |
+                <a id="official-link" href="#">官方原文</a>
+            </div>
+          </div>
+        </div>
+        {% include contributer.html %}
+      </div>
+    </div>
+    <div class="footer-bannerframe">
+      <div id="trickster-banner-head-left"></div>
+      <div id="trickster-banner-head-right"></div>
+      <div>
+        HOMESTUCK TRADITIONAL CHINESE TRANSLATION
+      </div>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>

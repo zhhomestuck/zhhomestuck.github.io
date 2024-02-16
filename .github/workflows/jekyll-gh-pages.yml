@@ -1,0 +1,66 @@
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+
+on:
+  push:
+    branch:
+      - master
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+permissions:
+  contents: read
+  pages: write      # to deploy to Pages
+  id-token: write   # to verify the deployment originates from an appropriate source
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
+        with:
+          ruby-version: '3.1' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
+      - name: Install Ruby dependencies
+        run: gem install jekyll-import jekyll-paginate
+      - name: Import from XML
+        run: ruby -r rubygems -e 'require "jekyll-import";JekyllImport::Importers::Blogger.run({"source"=>"./blog.xml","no-blogger-info"=>true,"replace-internal-link"=>false})'
+      - name: Run preprocess script
+        run: python3 ./scripts/preprocess.py
+      - name: Copy blog backups
+        run: cp blog-plain.txt blog.xml ./_site/backups
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site/p
+      # - name: List rendered posts and pages
+      #   run: ls ./_site/p
+      - name: Run postprocess scripts
+        run: python3 ./scripts/postprocess.py && python3 ./scripts/index_updater.py && python3 ./scripts/write_flash_index.py
+      - name: Move info pages to root
+        run: sudo mv -t ./_site ./_site/p/infos/* ./_site/p/index.html ./_site/p/404.html && sudo rm -r ./_site/p/infos 
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+
+  # Deploy job
+  deploy:
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    # Add a dependency to the build job
+    needs: build
+    # Specify runner + deployment step
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
