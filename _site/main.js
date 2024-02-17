@@ -58,18 +58,21 @@ function flashWarning() {
 
 function dynamicLinks() {
     // link to offical page
+    let urlNumberStart = document.URL.indexOf('00')+2;
+    let urlNumberEnd = urlNumberStart + 4;
+    let officialLinkNumber = parseInt(document.URL.substring(urlNumberStart,urlNumberEnd)) - 1900;
     document.getElementById("official-link").href =
-        "https://www.homestuck.com/story/" + (parseInt(document.URL.substr(document.URL.indexOf('00')+2,4))-1900).toString();
+        "https://www.homestuck.com/story/" + officialLinkNumber.toString();
     // link to homestuckjz
     var isLastPage = document.getElementById("newer-page-link").className == "to-jz";
     if (isLastPage) {
         document.getElementById("newer-page-link").href =
-            "https://linzhiyi622.github.io/homestuckjz.GitHub.io/" + (parseInt(document.URL.substr(document.URL.indexOf('00')+2,4))-1900+1).toString() + ".html";
+            "https://linzhiyi622.github.io/homestuckjz.GitHub.io/" + (officialLinkNumber+1).toString() + ".html";
     }
 }
 
 function importRuffleRS() {
     let imported = document.createElement('script');
-    imported.src = 'https://zhhomestuck.github.io/ruffle/ruffle.js';
+    imported.src = 'https://unpkg.com/@ruffle-rs/ruffle';
     document.head.appendChild(imported);
 }
