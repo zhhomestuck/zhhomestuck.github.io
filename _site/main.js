@@ -77,6 +77,6 @@ function importRuffleRS() {
     document.head.appendChild(imported);
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
-        fontSources: ["/assets/NotoSerifCJKTC-font.swf"]
+        fontSources: ["/assets/NotoSansCJKTC-font.swf"]
     }
 }
