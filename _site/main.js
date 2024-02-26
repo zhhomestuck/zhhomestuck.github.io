@@ -77,6 +77,6 @@ function importRuffleRS() {
     document.head.appendChild(imported);
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
-        fontSources: ["/assets/PMingLiu-font.swf", "/assets/CourierNew-font.swf"]
+        fontSources: ["/assets/NotoSerifCJKTC-font.swf"]
     }
 }
