@@ -79,9 +79,9 @@ function importRuffleRS() {
     window.RufflePlayer.config = {
         fontSources: ["/assets/flash-tc-fonts.swf"],
         defaultFonts: {
-            sans: ["Courier New", "PMingLiu"],
-            serif: ["Courier New", "PMingLiu"],
-            typewriter: ["Courier New", "PMingLiu"],
+            sans: ["Courier New", "PMingLiu", "新細明體"],
+            serif: ["Courier New", "PMingLiu", "新細明體"],
+            typewriter: ["Courier New", "PMingLiu", "新細明體"],
         }
     }
 }
