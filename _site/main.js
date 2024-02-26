@@ -79,13 +79,13 @@ function importRuffleRS() {
     window.RufflePlayer.config = {
         "fontSources": [
             "/assets/font-swfs/homestuck-tc-fonts.swf",
-            // "/assets/font-swfs/courier-new-pixel.swf",
-            // "/assets/font-swfs/homestuck-fonts.swf",
+            "/assets/font-swfs/courier-new-pixel.swf",
+            "/assets/font-swfs/homestuck-fonts.swf",
         ],
         "defaultFonts": {
-            "sans": ["微軟正黑體"],
-            "serif": ["新細明體"],
-            "typewriter": ["新細明體"]
+            "sans": ["Arial", "微軟正黑體"],
+            "serif": ["Times New Roman", "新細明體"],
+            "typewriter": ["Courier New", "新細明體"]
         },
         "logLevel": "info",
     };
