@@ -84,9 +84,9 @@ function importRuffleRS() {
             "/assets/font-swfs/NotoSansCJKTC.swf",
         ],
         "defaultFonts": {
-            "sans": ["Noto Sans CJK TC", "Arial"],
-            "serif": ["Noto Serif CJK TC", "Times New Roman"],
-            "typewriter": ["Noto Serif CJK TC", "Courier New"]
+            "sans": ["Noto Sans CJK TC Regular", "Arial"],
+            "serif": ["Noto Serif CJK TC Regular", "Times New Roman"],
+            "typewriter": ["Noto Serif CJK TC Bold", "Courier New"]
         },
         "logLevel": "info",
     };
