@@ -77,6 +77,11 @@ function importRuffleRS() {
     document.head.appendChild(imported);
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
-        fontSources: ["/assets/flash-tc-fonts.swf"]
+        fontSources: ["/assets/flash-tc-fonts.swf"],
+        defaultFonts: {
+            sans: ["PMingLiu"],
+            serif: ["PMingLiu"],
+            typewriter: ["PMingLiu"],
+        }
     }
 }
