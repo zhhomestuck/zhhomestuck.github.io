@@ -79,14 +79,14 @@ function importRuffleRS() {
     window.RufflePlayer.config = {
         "fontSources": [
             // "/assets/font-swfs/courier-new-pixel.swf",
-            "/assets/font-swfs/homestuck-fonts.swf",
+            // "/assets/font-swfs/homestuck-fonts.swf",
             "/assets/font-swfs/NotoSerifCJKTC.swf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
         ],
         "defaultFonts": {
             "sans": ["Noto Sans CJK TC Regular"],
             "serif": ["Noto Serif CJK TC Regular"],
-            "typewriter": ["Noto Serif CJK TC Bold"]
+            "typewriter": ["Noto Sans CJK TC Bold"]
         },
         "logLevel": "info",
     };
