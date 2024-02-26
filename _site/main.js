@@ -79,8 +79,8 @@ function importRuffleRS() {
     window.RufflePlayer.config = {
         "fontSources": [
             "/assets/font-swfs/homestuck-tc-fonts.swf",
-            "/assets/font-swfs/courier-new-pixel.swf",
-            "/assets/font-swfs/homestuck-fonts.swf",
+            // "/assets/font-swfs/courier-new-pixel.swf",
+            // "/assets/font-swfs/homestuck-fonts.swf",
         ],
         "defaultFonts": {
             "sans": ["微軟正黑體"],
