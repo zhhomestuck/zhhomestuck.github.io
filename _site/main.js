@@ -80,12 +80,12 @@ function importRuffleRS() {
         "fontSources": [
             "/assets/courier-new-pixel.swf",
             "/assets/homestuck-fonts.swf",
-            "/assets/PMingLiu.swf"
+            "/assets/homestuck-tc-fonts.swf"
         ],
         "defaultFonts": {
             "sans": ["Arial"],
-            "serif": ["PMingLiu"], //["Times New Roman"],
-            "typewriter": ["Courier New"]
+            "serif": ["Times New Roman", "PMingLiu"],
+            "typewriter": ["Courier New", "PMingLiu"]
         },
         "logLevel": "info",
     };
