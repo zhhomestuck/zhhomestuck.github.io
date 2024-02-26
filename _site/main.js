@@ -77,7 +77,7 @@ function importRuffleRS() {
     document.head.appendChild(imported);
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
-        fontSources: [
+        "fontSources": [
             "/assets/courier-new-pixel.swf",
             "/assets/homestuck-fonts.swf",
             "/assets/PMingLiu.swf"
