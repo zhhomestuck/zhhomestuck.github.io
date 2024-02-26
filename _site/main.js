@@ -83,9 +83,9 @@ function importRuffleRS() {
             "/assets/font-swfs/homestuck-fonts.swf",
         ],
         "defaultFonts": {
-            "sans": ["微軟正黑體", "Arial"],
-            "serif": ["新細明體", "Times New Roman"],
-            "typewriter": ["新細明體", "Courier New"]
+            "sans": ["微軟正黑體"],
+            "serif": ["新細明體"],
+            "typewriter": ["新細明體"]
         },
         "logLevel": "info",
     };
