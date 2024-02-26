@@ -75,6 +75,7 @@ function importRuffleRS() {
     let imported = document.createElement('script');
     imported.src = 'https://unpkg.com/@ruffle-rs/ruffle';
     document.head.appendChild(imported);
+    window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
         fontSources: ["/assets/flash-tc-fonts.swf"]
     }
