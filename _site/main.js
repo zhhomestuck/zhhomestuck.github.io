@@ -78,14 +78,14 @@ function importRuffleRS() {
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
         "fontSources": [
-            "/assets/courier-new-pixel.swf",
-            "/assets/homestuck-fonts.swf",
-            "/assets/homestuck-tc-fonts.swf"
+            "/assets/font-swfs/courier-new-pixel.swf",
+            "/assets/font-swfs/homestuck-fonts.swf",
+            "/assets/font-swfs/homestuck-tc-fonts.swf"
         ],
         "defaultFonts": {
-            "sans": ["Arial"],
-            "serif": ["Times New Roman", "PMingLiu"],
-            "typewriter": ["Courier New", "PMingLiu"]
+            "sans": ["Arial", "微軟正黑體"],
+            "serif": ["Times New Roman", "新細明體"],
+            "typewriter": ["Courier New", "新細明體"]
         },
         "logLevel": "info",
     };
