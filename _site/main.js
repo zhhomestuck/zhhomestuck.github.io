@@ -87,10 +87,6 @@ function importRuffleRS() {
             "serif": ["PMingLiu"], //["Times New Roman"],
             "typewriter": ["Courier New"]
         },
-        "polyfills": false,
-        "letterbox": "off",
-        "unmuteOverlay": "hidden",
-        "warnOnUnsupportedContent": false,
         "logLevel": "info",
-    }
+    };
 }
