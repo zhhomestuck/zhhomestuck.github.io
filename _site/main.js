@@ -77,11 +77,11 @@ function importRuffleRS() {
     document.head.appendChild(imported);
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
-        fontSources: ["/assets/flash-tc-fonts.swf"],
+        fontSources: ["/assets/CourierNew-fonts.swf", "/assets/PMingLiu-fonts.swf"],
         defaultFonts: {
-            sans: ["Courier New", "PMingLiu", "新細明體"],
-            serif: ["Courier New", "PMingLiu", "新細明體"],
-            typewriter: ["Courier New", "PMingLiu", "新細明體"],
+            sans: ["Courier New", "PMingLiu"],
+            serif: ["Courier New", "PMingLiu"],
+            typewriter: ["Courier New", "PMingLiu"],
         }
     }
 }
