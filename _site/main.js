@@ -42,7 +42,7 @@ function flashWarning() {
     else if (document.getElementsByTagName("embed").length == 1) {
         flashElem = document.getElementsByTagName("embed")[0];
     }
-    if(flashElem){
+    if (flashElem) {
         let flashUrl = flashElem.data || flashElem.src;
         let pb = document.getElementsByClassName("pagebody")[0];
         let warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看，或是<a href=\"#\" onclick=\"importRuffleRS()\">嘗試使用ruffle播放</a>";
@@ -75,19 +75,47 @@ function importRuffleRS() {
     let imported = document.createElement('script');
     imported.src = 'https://unpkg.com/@ruffle-rs/ruffle';
     document.head.appendChild(imported);
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.RufflePlayer.config = {
-        "fontSources": [
-            // "/assets/font-swfs/courier-new-pixel.swf",
-            // "/assets/font-swfs/homestuck-fonts.swf",
+
+
+    let flashURL = undefined;
+    if (document.getElementsByTagName("object").length == 1) {
+        let flashElem = document.getElementsByTagName("object")[0];
+        flashURL = flashElem.data;
+    }
+    else if (document.getElementsByTagName("embed").length == 1) {
+        let flashElem = document.getElementsByTagName("embed")[0];
+        flashURL = flashElem.src;
+    }
+    let isTranslatedSWF = false;
+    if (flashURL) {
+        isTranslatedSWF = flashURL.includes("zhhomestuck.github.io/flash");
+    }
+    
+    let fontSourcesURL = [
+        "/assets/font-swfs/courier-new-pixel.swf",
+        "/assets/font-swfs/homestuck-fonts.swf",
+    ];
+    let defaultFonts = {
+        "sans": ["Verdana"],
+        "serif": ["Times New Roman"],
+        "typewriter": ["Courier New"]
+    };
+    if (isTranslatedSWF) {
+        fontSourcesURL = [
             "/assets/font-swfs/NotoSerifCJKTC.swf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
-        ],
-        "defaultFonts": {
+        ];
+        defaultFonts = {
             "sans": ["Noto Sans CJK TC Regular"],
             "serif": ["Noto Serif CJK TC Regular"],
             "typewriter": ["Noto Sans CJK TC Bold"]
-        },
+        };
+    }
+    
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+        "fontSources": fontSourcesURL,
+        "defaultFonts": defaultFonts,
         "logLevel": "info",
     };
 }
