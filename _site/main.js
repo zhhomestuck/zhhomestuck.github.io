@@ -84,6 +84,8 @@ function importRuffleRS() {
     }
     else if (document.getElementsByTagName("embed").length == 1) {
         let flashElem = document.getElementsByTagName("embed")[0];
+        flashElem.width = "650";
+        flashElem.height = "450";
         flashURL = flashElem.src;
     }
     let isTranslatedSWF = false;
