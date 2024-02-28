@@ -114,6 +114,7 @@ function importRuffleRS() {
             "serif": ["Courier New 新細明體 Regular"],
             "typewriter": [
                 "Courier New 新細明體 Bold",
+                "courbPMingLiU",
                 "Noto Sans CJK TC Bold"
             ]
         };
