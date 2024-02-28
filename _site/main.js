@@ -112,7 +112,11 @@ function importRuffleRS() {
         defaultFonts = {
             "sans": ["Noto Sans CJK TC Regular"],
             "serif": ["Noto Serif CJK TC Regular"],
-            "typewriter": ["CourierNew+新細明體", "courPMingLiU", "Noto Sans CJK TC Bold"]
+            "typewriter": [
+                "CourierNew+新細明體 Bold",
+                "CourierNew+新細明體",
+                "Noto Sans CJK TC Bold"
+            ]
         };
     }
     
