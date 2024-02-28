@@ -106,9 +106,7 @@ function importRuffleRS() {
         fontSourcesURL = [
             "/assets/font-swfs/NotoSerifCJKTC.swf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
-            // "/assets/font-swfs/courier-new-pixel.swf",
             "/assets/font-swfs/courPMingLiU.swf",
-            "/assets/font-swfs/homestuck-fonts.swf",
         ];
         // because font fallback is not implemented (2024-02-28)
         defaultFonts = {
