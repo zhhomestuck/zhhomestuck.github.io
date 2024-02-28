@@ -106,12 +106,12 @@ function importRuffleRS() {
         fontSourcesURL = [
             // "/assets/font-swfs/NotoSerifCJKTC.swf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
-            "/assets/font-swfs/courPMingLiU.swf",
+            "/assets/font-swfs/courbPMingLiU.swf",
         ];
         // because font fallback is not implemented (2024-02-28)
         defaultFonts = {
             "sans": ["Noto Sans CJK TC Regular"],
-            "serif": ["Courier New PMingLiU Regular"],
+            "serif": ["Courier New PMingLiU Bold"],
             "typewriter": [
                 "Courier New PMingLiU Bold",
                 "Noto Sans CJK TC Bold"
