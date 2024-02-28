@@ -104,17 +104,16 @@ function importRuffleRS() {
     };
     if (isTranslatedSWF) {
         fontSourcesURL = [
-            "/assets/font-swfs/NotoSerifCJKTC.swf",
+            // "/assets/font-swfs/NotoSerifCJKTC.swf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
             "/assets/font-swfs/courPMingLiU.swf",
         ];
         // because font fallback is not implemented (2024-02-28)
         defaultFonts = {
             "sans": ["Noto Sans CJK TC Regular"],
-            "serif": ["Noto Serif CJK TC Regular"],
+            "serif": ["Courier New 新細明體 Regular"],
             "typewriter": [
-                "CourierNew+新細明體 Bold",
-                "CourierNew+新細明體",
+                "Courier New 新細明體 Bold",
                 "Noto Sans CJK TC Bold"
             ]
         };
