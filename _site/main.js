@@ -106,14 +106,15 @@ function importRuffleRS() {
         fontSourcesURL = [
             "/assets/font-swfs/NotoSerifCJKTC.swf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
-            "/assets/font-swfs/courier-new-pixel.swf",
+            // "/assets/font-swfs/courier-new-pixel.swf",
+            "/assets/font-swfs/courPMingLiU.swf",
             "/assets/font-swfs/homestuck-fonts.swf",
         ];
         // because font fallback is not implemented (2024-02-28)
         defaultFonts = {
             "sans": ["Noto Sans CJK TC Regular"],
             "serif": ["Noto Serif CJK TC Regular"],
-            "typewriter": ["Noto Sans CJK TC Bold"]
+            "typewriter": ["CourierNew+新細明體", "courPMingLiU", "Noto Sans CJK TC Bold"]
         };
     }
     
