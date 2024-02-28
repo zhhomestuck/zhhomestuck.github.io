@@ -104,14 +104,14 @@ function importRuffleRS() {
     };
     if (isTranslatedSWF) {
         fontSourcesURL = [
-            "/assets/font-swfs/courbdPMingLiU.swf",
+            // "/assets/font-swfs/courbdPMingLiU.swf",
             // "/assets/font-swfs/NotoSerifCJKTC.swf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
         ];
         // font fallback is not implemented (2024-02-28)
         defaultFonts = {
-            "sans": ["Verdana", "Noto Sans CJK TC Regular"],
-            "serif": ["Times New Roman", "courbd新細明體"],
+            "sans": ["Verdana", "Noto Sans CJK TC Bold"],
+            "serif": ["Times New Roman", "courbd新細明體", "Noto Sans CJK TC Bold"],
             "typewriter": ["Courier New", "courbd新細明體", "Noto Sans CJK TC Bold"]
         };
     }
