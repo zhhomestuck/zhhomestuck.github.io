@@ -111,10 +111,9 @@ function importRuffleRS() {
         // because font fallback is not implemented (2024-02-28)
         defaultFonts = {
             "sans": ["Noto Sans CJK TC Regular"],
-            "serif": ["Courier New 新細明體 Regular"],
+            "serif": ["Courier New PMingLiU Regular"],
             "typewriter": [
-                "Courier New 新細明體 Bold",
-                "courbPMingLiU",
+                "Courier New PMingLiU Bold",
                 "Noto Sans CJK TC Bold"
             ]
         };
