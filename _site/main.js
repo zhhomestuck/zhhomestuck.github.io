@@ -109,10 +109,11 @@ function importRuffleRS() {
             "/assets/font-swfs/courier-new-pixel.swf",
             "/assets/font-swfs/homestuck-fonts.swf",
         ];
+        // because font fallback is not implemented (2024-02-28)
         defaultFonts = {
-            "sans": ["Verdana", "Noto Sans CJK TC Regular"],
-            "serif": ["Times New Roman", "Noto Serif CJK TC Regular"],
-            "typewriter": ["Courier New", "Noto Sans CJK TC Bold"]
+            "sans": ["Noto Sans CJK TC Regular"],
+            "serif": ["Noto Serif CJK TC Regular"],
+            "typewriter": ["Noto Sans CJK TC Bold"]
         };
     }
     
