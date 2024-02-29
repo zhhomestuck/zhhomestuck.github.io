@@ -45,7 +45,7 @@ function flashWarning() {
     if (flashElem) {
         let flashUrl = flashElem.data || flashElem.src;
         let pb = document.getElementsByClassName("pagebody")[0];
-        let warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看，或是<a href=\"#\" onclick=\"importRuffleRS()\">嘗試使用ruffle播放</a>";
+        let warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看，或是<a id=\"ruffle-import-link\" href=\"#\" onclick=\"importRuffleRS()\">嘗試使用ruffle播放</a>";
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
@@ -76,6 +76,9 @@ function importRuffleRS() {
     imported.src = 'https://unpkg.com/@ruffle-rs/ruffle';
     document.head.appendChild(imported);
 
+    let ruffleImportLink = document.getElementById("ruffle-import-link");
+    ruffleImportLink.removeAttribute("onclick");
+    ruffleImportLink.removeAttribute("href");
 
     let flashURL = undefined;
     if (document.getElementsByTagName("object").length == 1) {
