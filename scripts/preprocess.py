@@ -131,7 +131,7 @@ def escape_markdowns():
         story_string = "".join(post_lines[end_front_mat:])
         if story_string[0] == '\n':
             story_string = story_string[1:]
-        story_string = f'<div id="no-markdown" markdown="0">{story_string}<!-- end of no markdown --></div>'
+        # story_string = f'<div id="no-markdown" markdown="0">{story_string}<!-- end of no markdown --></div>'
         # The markdown="0" attribute will drop after markdown parser
         with open(post_path, 'w', encoding='utf-8', newline='\n') as post_file:
             post_file.write(yml_string+story_string)
