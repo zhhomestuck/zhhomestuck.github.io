@@ -432,6 +432,7 @@ body.x2combo {
   display: block;
   font-size: 15px; /* somehow table tag changes font size */
   max-width: 650px;
+  min-width: 325px;
 }
 .x2combo .x2combo-middle-padding {
   padding: 0 10px;
