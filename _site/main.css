@@ -407,6 +407,8 @@ X2COMBO PAGES
 
 .x2combo  #x2combo-header{
   height: 44px;
+  width: 100vw;
+  max-width: 100%;
   margin: 0px auto;
   background: #232323 url('/images/act6act5act1x2combo.gif');
   background-repeat: no-repeat;
@@ -418,7 +420,6 @@ X2COMBO PAGES
 .x2combo .footer-bannerframe {
   width: 100vw;
   max-width: 1620px; /* 150 + 650 + 20 + 650 + 150 */
-  min-width: 670px; /* 325 + 20 + 325 */
 }
 .x2combo .content-inner {
   max-width: 1320px; /* 650 + 20 + 650 */
@@ -427,7 +428,6 @@ X2COMBO PAGES
   display: block;
   font-size: 15px; /* somehow table tag changes font size */
   max-width: 650px;
-  min-width: 325px;
 }
 .x2combo .x2combo-middle-padding {
   padding: 0 10px;
