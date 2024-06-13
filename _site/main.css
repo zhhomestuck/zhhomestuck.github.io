@@ -258,8 +258,9 @@ div.log-inner span img {
   font-size: 36px;
 }
 
-/* On screens that are 650px or less, set the smaller font sizes */
-@media screen and (max-width: 675px) {
+/* On screens that are 720px or less, set the smaller font sizes */
+/* 720 ==> 650 (normal image width) + 35 * 2 (content inner paddings) */
+@media screen and (max-width: 720px) {
   body {
     padding: 0;
   }
@@ -406,7 +407,7 @@ X2COMBO PAGES
 *************/
 
 body.x2combo {
-  min-width: 670px; /* 325 + 20 + 325 */
+  min-width: 720px; /* 350 (td's min-width) + 20 (padding) + 350 */
 }
 .x2combo #x2combo-header{
   height: 44px;
@@ -422,17 +423,17 @@ body.x2combo {
 .x2combo .footer-bannerframe {
   width: 100vw;
   max-width: 1620px; /* 150 + 650 + 20 + 650 + 150 */
-  min-width: 670px;
+  min-width: 720px;
 }
 .x2combo .content-inner {
   max-width: 1320px; /* 650 + 20 + 650 */
-  min-width: 670px;
+  min-width: 720px;
 }
 .x2combo .x2combo-td {
   display: block;
   font-size: 15px; /* somehow table tag changes font size */
   max-width: 650px;
-  min-width: 325px;
+  min-width: 350px;
 }
 .x2combo .x2combo-middle-padding {
   padding: 0 10px;
