@@ -3,9 +3,7 @@ destination:   ./_site/p
 permalink:     /:title.html
 
 safe:          true
-encoding:      UTF-8
 exclude:       ["Gemfile*", "README*", "LICENSE*", "*.bat", "*.sh", "*.csv", "*.txt", "*.xml", "scripts"]
-markdown_ext:  "html"
 
 plugins:       [jekyll-paginate]
 paginate:      1
