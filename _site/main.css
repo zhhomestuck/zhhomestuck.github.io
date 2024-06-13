@@ -435,6 +435,9 @@ body.x2combo {
   max-width: 650px;
   min-width: 350px;
 }
+.x2combo .pagebody img {
+  min-width: 350px;
+}
 .x2combo .x2combo-middle-padding {
   padding: 0 10px;
 }
