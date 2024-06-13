@@ -405,6 +405,9 @@ body.trickster {
 X2COMBO PAGES
 *************/
 
+body.x2combo {
+  min-width: 670px; /* 325 + 20 + 325 */
+}
 .x2combo  #x2combo-header{
   height: 44px;
   width: 100vw;
@@ -420,9 +423,11 @@ X2COMBO PAGES
 .x2combo .footer-bannerframe {
   width: 100vw;
   max-width: 1620px; /* 150 + 650 + 20 + 650 + 150 */
+  min-width: 670px;
 }
 .x2combo .content-inner {
   max-width: 1320px; /* 650 + 20 + 650 */
+  min-width: 670px;
 }
 .x2combo .x2combo-td {
   display: block;
