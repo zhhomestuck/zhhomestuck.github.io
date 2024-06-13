@@ -408,9 +408,8 @@ X2COMBO PAGES
 body.x2combo {
   min-width: 670px; /* 325 + 20 + 325 */
 }
-.x2combo  #x2combo-header{
+.x2combo #x2combo-header{
   height: 44px;
-  width: 100vw;
   max-width: 100%;
   margin: 0px auto;
   background: #232323 url('/images/act6act5act1x2combo.gif');
@@ -443,7 +442,7 @@ body.x2combo {
   padding-bottom: 30px;
 }
 /* special effect of "next page" link text */
-.x2combo  #x2np {
+.x2combo #x2np {
   display: inline-block;
   text-decoration: underline;
   -ms-transform: matrix(0.894, -0.5, 0.5, 0.894, 0, -16); /* IE 9 */
