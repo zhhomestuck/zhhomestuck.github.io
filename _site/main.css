@@ -3,7 +3,7 @@ body {
   font-size: 15px;
   color: #000000;
   margin: 0px;
-  padding: 0 5px;
+  /* padding: 0 5px; */
   background-color: #535353;
 }
 div, .pagebody div img, table, td, p {
@@ -62,11 +62,6 @@ b {
 .page {
   background-color: #eeeeee;
 }
-/* .no-markdown {
-  border: none;
-  margin: 0;
-  padding: 0;
-} */
 
 /* Pagehead */
 .pagehead {

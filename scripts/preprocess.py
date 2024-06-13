@@ -111,30 +111,30 @@ def give_layouts():
                 with open(post_path, 'w', encoding='utf-8', newline='\n') as post_file:
                     post_file.write(file_string)
 
-def escape_markdowns():
-    print("escaping markdown characters...")
-    for post_name in POST_LIST:
-        post_path = os.path.join(POST_DIR_PATH, post_name)
-        with open(post_path, "r", encoding='utf-8') as post_file:
-            post_lines = post_file.readlines()
-        # find the end of front matter
-        begin_front_mat = -1
-        end_front_mat = -1
-        for index, line in enumerate(post_lines):
-            if line == "---\n":
-                if begin_front_mat < 0:
-                    begin_front_mat = index
-                else:
-                    end_front_mat = index + 1
-                    break
-        yml_string = "".join(post_lines[:end_front_mat])
-        story_string = "".join(post_lines[end_front_mat:])
-        if story_string[0] == '\n':
-            story_string = story_string[1:]
-        # story_string = f'<div id="no-markdown" markdown="0">{story_string}<!-- end of no markdown --></div>'
-        # The markdown="0" attribute will drop after markdown parser
-        with open(post_path, 'w', encoding='utf-8', newline='\n') as post_file:
-            post_file.write(yml_string+story_string)
+# def escape_markdowns():
+#     print("escaping markdown characters...")
+#     for post_name in POST_LIST:
+#         post_path = os.path.join(POST_DIR_PATH, post_name)
+#         with open(post_path, "r", encoding='utf-8') as post_file:
+#             post_lines = post_file.readlines()
+#         # find the end of front matter
+#         begin_front_mat = -1
+#         end_front_mat = -1
+#         for index, line in enumerate(post_lines):
+#             if line == "---\n":
+#                 if begin_front_mat < 0:
+#                     begin_front_mat = index
+#                 else:
+#                     end_front_mat = index + 1
+#                     break
+#         yml_string = "".join(post_lines[:end_front_mat])
+#         story_string = "".join(post_lines[end_front_mat:])
+#         if story_string[0] == '\n':
+#             story_string = story_string[1:]
+#         story_string = f'<div id="no-markdown" markdown="0">{story_string}<!-- end of no markdown --></div>'
+#         # The markdown="0" attribute will drop after markdown parser
+#         with open(post_path, 'w', encoding='utf-8', newline='\n') as post_file:
+#             post_file.write(yml_string+story_string)
 
 def replace_strings():
     print("replacing strings and links...")
@@ -200,5 +200,5 @@ if __name__ == "__main__":
     # p_values_check()
     make_plain_blog()
     give_layouts()
-    escape_markdowns()
+    # escape_markdowns()
     replace_strings()
