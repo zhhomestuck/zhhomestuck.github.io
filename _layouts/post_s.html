@@ -16,7 +16,7 @@
             {{page.title}}
           </div>
           <div class="pagebody">
-            {{page.content | remove: '<p>' | remove: '</p>' | remove: '<div id="no-markdown">' | remove: '<!-- end of no markdown --></div>'}}
+            {{page.content | remove: '<p>' | remove: '</p>'}}
           </div>
           <div class="pagefoot">
             {% if page.next.url %}
