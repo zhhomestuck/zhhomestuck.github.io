@@ -121,13 +121,13 @@ function s_makeLETooltipText() {
         return
     }
     tooltipImg.addEventListener('mouseover', (event) => {
-        LETooltip.style.left = (event.pageX + 30) + "px";
-        LETooltip.style.top = (event.pageY + 20)+ event.clientX + "px";
+        LETooltip.style.left = (event.pageX + 10) + "px";
+        LETooltip.style.top = (event.pageY + 10)+ event.clientX + "px";
         LETooltip.style.display = "block";
     });
     tooltipImg.addEventListener('mousemove', (event) => {
-        LETooltip.style.left = (event.pageX + 30) + "px";
-        LETooltip.style.top = (event.pageY + 20) + "px";
+        LETooltip.style.left = (event.pageX + 10) + "px";
+        LETooltip.style.top = (event.pageY + 10) + "px";
         LETooltip.style.display = "block";
     });
     tooltipImg.addEventListener('mouseout', (event) => {

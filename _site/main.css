@@ -313,11 +313,24 @@ SCRATCH PAGES
 #s_header_src {
   display: none;
 }
+
+/* AH alt textt */
 #tooltipimg, #tooltipimg:hover {
   cursor: pointer;
   color: white;
 }
 
+/* LE alt text */
+#tooltip {
+  position: fixed;
+  background: transparent;
+  z-index: 2000;
+}
+#tooltip img {
+  height: fit-content;
+  width: fit-content;
+  max-width: fit-content;
+}
 
 /************
 SBAHJ PAGES
