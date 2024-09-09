@@ -4,6 +4,7 @@ makeSpoilerLog();
 flashWarning();
 s_makeHeaderImage();
 s_makeTapAltText();
+s_makeLETooltipText();
 
 // Make log
 function makeSpoilerLog(parentNode) {
@@ -64,7 +65,8 @@ function dynamicLinks() {
     document.getElementById("official-link").href =
         "https://www.homestuck.com/story/" + officialLinkNumber.toString();
     // link to homestuckjz
-    var isLastPage = document.getElementById("newer-page-link").className == "to-jz";
+    const newerPageLink = document.getElementById("newer-page-link");
+    var isLastPage = newerPageLink && newerPageLink.className == "to-jz";
     if (isLastPage) {
         document.getElementById("newer-page-link").href =
             "https://linzhiyi622.github.io/homestuckjz.GitHub.io/" + (officialLinkNumber+1).toString() + ".html";
@@ -84,10 +86,10 @@ function s_makeTapAltText() {
     if (sHeaderImg === null) {
         return
     }
-    const tooltipimg = document.getElementById("tooltipimg");
+    const tooltipImg = document.getElementById("tooltipimg");
     let isTapAltTextOn = false;
     const tapAltText = document.createElement("div");
-    tapAltText.innerHTML = tooltipimg.title;
+    tapAltText.innerHTML = tooltipImg.title;
     tapAltText.style.width = "fit-content";
     tapAltText.style.padding = "0 3px";
     tapAltText.style.margin = "0 auto";
@@ -97,19 +99,41 @@ function s_makeTapAltText() {
     tapAltText.style.backgroundColor = "#EFEFEF";
     sHeaderImg.addEventListener('click', () => {
         if (isTapAltTextOn) {
-            tooltipimg.removeChild(tooltipimg.lastChild);
+            tooltipImg.removeChild(tooltipImg.lastChild);
         }
         else {
-            tooltipimg.appendChild(tapAltText);
+            tooltipImg.appendChild(tapAltText);
         }
         isTapAltTextOn = !isTapAltTextOn;
     });
     // add a message to mobile user
-    tooltipimg.innerHTML = tooltipimg.innerHTML.replace(
+    tooltipImg.innerHTML = tooltipImg.innerHTML.replace(
         "說真的，把你的滑鼠放在圖片上，像這樣。",
         "說真的，把你的滑鼠放在圖片上，像這樣。<span class=\"note\">(如果是行動裝置，就點一下圖片。)</span>"
     )
 }
+
+function s_makeLETooltipText() {
+    const tooltipImg = document.getElementById("tooltipimg");
+    if (tooltipImg === null) {
+        return
+    }
+    const LETooltip = document.getElementById("tooltip");
+    tooltipImg.addEventListener('mouseover', (event) => {
+        LETooltip.style.top = (event.pageX + 30) + "px";
+        LETooltip.style.left = (event.pagey + 20) + "px";
+        LETooltip.style.display = "block";
+    });
+    tooltipImg.addEventListener('mouseout', (event) => {
+        LETooltip.style.top = (event.pageX + 30) + "px";
+        LETooltip.style.left = (event.pagey + 20) + "px";
+        LETooltip.style.display = "block";
+    });
+    tooltipImg.addEventListener('mouseout', (event) => {
+        LETooltip.style.display = "none";
+    });
+}
+
 
 function importRuffleRS() {
     let imported = document.createElement('script');
