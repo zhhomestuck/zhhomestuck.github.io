@@ -98,7 +98,7 @@ function s_makeTapAltText() {
     tapAltText.style.fontSize = "0.8em";
     tapAltText.style.color = "#333333";
     tapAltText.style.backgroundColor = "#EFEFEF";
-    sHeaderImg.addEventListener('click', () => {
+    tooltipImg.addEventListener('click', () => {
         if (isTapAltTextOn) {
             tooltipImg.removeChild(tooltipImg.lastChild);
         }
