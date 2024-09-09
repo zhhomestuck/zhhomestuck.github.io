@@ -75,18 +75,19 @@ function dynamicLinks() {
 
 function s_makeHeaderImage() {
     const sHeaderImg = document.getElementById("s_header");
-    if (sHeaderImg === null) {
+    const sHeaderSrcElem = document.getElementById('s_header_src')
+    if (sHeaderImg === null || sHeaderSrcElem === null) {
         return
     }
-    sHeaderImg.style.background = "url('" + document.getElementById('s_header_src').src + "')";
+    sHeaderImg.style.background = "url('" + sHeaderSrcElem.src + "')";
 }
 
 function s_makeTapAltText() {
     const sHeaderImg = document.getElementById("s_header");
-    if (sHeaderImg === null) {
+    const tooltipImg = document.getElementById("tooltipimg");
+    if (sHeaderImg === null || tooltipImg === null) {
         return
     }
-    const tooltipImg = document.getElementById("tooltipimg");
     let isTapAltTextOn = false;
     const tapAltText = document.createElement("div");
     tapAltText.innerHTML = tooltipImg.title;
@@ -115,18 +116,18 @@ function s_makeTapAltText() {
 
 function s_makeLETooltipText() {
     const tooltipImg = document.getElementById("tooltipimg");
-    if (tooltipImg === null) {
+    const LETooltip = document.getElementById("tooltip");
+    if (tooltipImg === null || LETooltip === null) {
         return
     }
-    const LETooltip = document.getElementById("tooltip");
     tooltipImg.addEventListener('mouseover', (event) => {
-        LETooltip.style.top = (event.pageX + 30) + "px";
-        LETooltip.style.left = (event.pagey + 20) + "px";
+        LETooltip.style.left = (event.pageX + 30) + "px";
+        LETooltip.style.top = (event.pageY + 20)+ event.clientX + "px";
         LETooltip.style.display = "block";
     });
-    tooltipImg.addEventListener('mouseout', (event) => {
-        LETooltip.style.top = (event.pageX + 30) + "px";
-        LETooltip.style.left = (event.pagey + 20) + "px";
+    tooltipImg.addEventListener('mousemove', (event) => {
+        LETooltip.style.left = (event.pageX + 30) + "px";
+        LETooltip.style.top = (event.pageY + 20) + "px";
         LETooltip.style.display = "block";
     });
     tooltipImg.addEventListener('mouseout', (event) => {
