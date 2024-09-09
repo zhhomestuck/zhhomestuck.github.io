@@ -313,6 +313,11 @@ SCRATCH PAGES
 #s_header_src {
   display: none;
 }
+#tooltipimg, #tooltipimg:hover {
+  cursor: pointer;
+  color: white;
+}
+
 
 /************
 SBAHJ PAGES

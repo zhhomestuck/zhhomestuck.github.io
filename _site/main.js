@@ -3,6 +3,7 @@ function main() {
     dynamicLinks();
     makeSpoilerLog();
     flashWarning();
+    makeTapAltText();
 }
 
 // Make log
@@ -69,6 +70,33 @@ function dynamicLinks() {
         document.getElementById("newer-page-link").href =
             "https://linzhiyi622.github.io/homestuckjz.GitHub.io/" + (officialLinkNumber+1).toString() + ".html";
     }
+}
+
+function makeTapAltText() {
+    const tooltipimg = document.getElementById("tooltipimg");
+    let isTapAltTextOn = false;
+    const tapAltText = document.createElement("div");
+    tapAltText.innerHTML = tooltipimg.title;
+    tapAltText.style.width = "fit-content";
+    tapAltText.style.margin = "0 auto";
+    tapAltText.style.padding = "1px";
+    tapAltText.style.fontSize = "0.8em";
+    tapAltText.style.color = "#696969";
+    tapAltText.style.backgroundColor = "#EFEFEF";
+    tooltipimg.addEventListener('click', () => {
+        if (isTapAltTextOn) {
+            tooltipimg.removeChild(tooltipimg.lastChild);
+        }
+        else {
+            tooltipimg.appendChild(tapAltText);
+        }
+        isTapAltTextOn = !isTapAltTextOn;
+    });
+    // add a message to mobile user
+    tooltipimg.innerHTML = tooltipimg.innerHTML.replace(
+        "說真的，把你的滑鼠放在圖片上，像這樣。",
+        "說真的，把你的滑鼠放在圖片上，像這樣。<span class=\"note\">(如果你用的是行動裝置，就點一下圖片。)</span>"
+    )
 }
 
 function importRuffleRS() {
