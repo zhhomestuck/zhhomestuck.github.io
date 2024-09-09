@@ -1,10 +1,9 @@
-
-function main() {
-    dynamicLinks();
-    makeSpoilerLog();
-    flashWarning();
-    makeTapAltText();
-}
+// main
+dynamicLinks();
+makeSpoilerLog();
+flashWarning();
+s_makeHeaderImage();
+s_makeTapAltText();
 
 // Make log
 function makeSpoilerLog(parentNode) {
@@ -72,18 +71,31 @@ function dynamicLinks() {
     }
 }
 
-function makeTapAltText() {
+function s_makeHeaderImage() {
+    const sHeaderImg = document.getElementById("s_header");
+    if (sHeaderImg === null) {
+        return
+    }
+    sHeaderImg.style.background = "url('" + document.getElementById('s_header_src').src + "')";
+}
+
+function s_makeTapAltText() {
+    const sHeaderImg = document.getElementById("s_header");
+    if (sHeaderImg === null) {
+        return
+    }
     const tooltipimg = document.getElementById("tooltipimg");
     let isTapAltTextOn = false;
     const tapAltText = document.createElement("div");
     tapAltText.innerHTML = tooltipimg.title;
     tapAltText.style.width = "fit-content";
+    tapAltText.style.padding = "0 3px";
     tapAltText.style.margin = "0 auto";
-    tapAltText.style.padding = "1px";
+    tapAltText.style.borderRadius = "1px";
     tapAltText.style.fontSize = "0.8em";
-    tapAltText.style.color = "#696969";
+    tapAltText.style.color = "#333333";
     tapAltText.style.backgroundColor = "#EFEFEF";
-    tooltipimg.addEventListener('click', () => {
+    sHeaderImg.addEventListener('click', () => {
         if (isTapAltTextOn) {
             tooltipimg.removeChild(tooltipimg.lastChild);
         }
@@ -95,7 +107,7 @@ function makeTapAltText() {
     // add a message to mobile user
     tooltipimg.innerHTML = tooltipimg.innerHTML.replace(
         "說真的，把你的滑鼠放在圖片上，像這樣。",
-        "說真的，把你的滑鼠放在圖片上，像這樣。<span class=\"note\">(如果你用的是行動裝置，就點一下圖片。)</span>"
+        "說真的，把你的滑鼠放在圖片上，像這樣。<span class=\"note\">(如果是行動裝置，就點一下圖片。)</span>"
     )
 }
 
