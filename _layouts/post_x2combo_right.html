@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 {% include head.html title=page.title %}
   <body class="x2combo">
-    <div id="header" class="header">
+    <div class="header">
       <div id="x2combo-header"></div>
 {% include navbar.html %}
     </div>
-    <div id="content" class="content">
-      <div id="content-inner" class="content-inner">
+    <div class="content">
+      <div class="content-inner">
         <table>
           <tr>
             <td id="x2combo1" class="x2combo-td">
@@ -40,7 +40,7 @@
             </td>
           </tr>
         </table>
-        <div class="pagefooter-option">
+        <div id="pagefooter-option">
           {% if page.previous.previous.url %}
             <a id="older-page-link" href=".{{page.previous.previous.url}}">上一頁</a>
           {% endif %}
