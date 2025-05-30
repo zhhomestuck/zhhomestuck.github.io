@@ -23,7 +23,7 @@ def strip_xml_tag(string):
     string = re.sub(r'<button(?:(?!<button|</button>)[\S\s])*</button>', '', string)
 
     # remove XML tags
-    string = re.sub(r'<[^<^>]+>', '', string)
+    string = re.sub(r'<[^<>]+>', '', string)
 
     string = re.sub(r'\n[\s]+', '\n', string)
     string = re.sub(r' +', ' ', string)
@@ -92,14 +92,14 @@ def make_plain_blog():
                         page_string = meta_lines + ''.join(page_lines)
                         break
             elif 'LOG COMMENCE' in content_string:
-                found = False
+                # found = False
                 for key, value in log_name_keys.items():
                     if key in content_string:
                         content_string = f'|{value}|\n' + content_string
-                        found = True
+                        # found = True
                         break
-                if not found:
-                    content_string = '|UNKNOWLOG|\n' + content_string
+                # if not found:
+                #     content_string = '|UNKNOWLOG|\n' + content_string
                 page_string = meta_lines + content_string
             else:
                 page_string = meta_lines + content_string
