@@ -51,7 +51,9 @@ def make_plain_blog():
         'Journalog': 'JOURNALOG',
         'Dialoglog': 'DIALOGLOG',
         'Authorlog': 'AUTHORLOG',
+        'authorlog': 'AUTHORLOG',
         "Recap log": 'RECAP LOG',
+        "Recap Log": 'RECAP LOG',
         'Tricksterlog': 'TRKSTRLOG',
         'log-outer-outer': 'PESTERLOG',
         '下收)': 'TRANSLATE',
@@ -74,7 +76,7 @@ def make_plain_blog():
                     meta_lines += line
                 if line == '---\n':
                     end_front_mat = i + 1
-            meta_lines += f'pageId: {os.path.basename(filepath)[11].split(".")[0]}\n'
+            meta_lines += f'pageId: {os.path.basename(filepath)[11:].split(".")[0]}\n'
             meta_lines += '---\n'
 
             page_string = ''
