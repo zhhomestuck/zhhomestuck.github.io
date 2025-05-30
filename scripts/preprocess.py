@@ -51,8 +51,11 @@ def make_plain_blog():
         'Journalog': 'JOURNALOG',
         'Dialoglog': 'DIALOGLOG',
         'Authorlog': 'AUTHORLOG',
+        "Recap log": 'RECAP LOG',
         'Tricksterlog': 'TRKSTRLOG',
-        '下收)': 'TRANSLATE'
+        'log-outer-outer': 'PESTERLOG',
+        '下收)': 'TRANSLATE',
+        '翻譯)': 'TRANSLATE'
     }
 
     transcript_page_list = []
@@ -64,13 +67,15 @@ def make_plain_blog():
             with io.open(filepath, 'r', encoding='utf-8') as file:
                 file_lines = file.readlines()[1:]
             # get title & find the end of front matter then remove front matter
-            title_line = ''
+            meta_lines = ''
             end_front_mat = 0
             for i, line in enumerate(file_lines):
                 if 'title:' in line:
-                    title_line = file_lines[i][7:]
+                    meta_lines += file_lines[i]
                 if line == '---\n':
-                    end_front_mat = i+1
+                    end_front_mat = i + 1
+            meta_lines += f'pageId: {os.path.basename(filepath)[:6]}\n'
+            meta_lines += '---\n'
 
             page_string = ''
             content_string = ''.join(file_lines[end_front_mat:])
@@ -82,7 +87,7 @@ def make_plain_blog():
                         transcript_page_list.append(page_path)
                         with open(page_path, 'r', encoding='utf-8') as f:
                             page_lines = f.readlines()[6:]
-                        page_string = title_line + ''.join(page_lines)
+                        page_string = meta_lines + ''.join(page_lines)
                         break
             elif 'LOG COMMENCE' in content_string:
                 found = False
@@ -93,14 +98,14 @@ def make_plain_blog():
                         break
                 if not found:
                     content_string = '|UNKNOWLOG|\n' + content_string
-                page_string = title_line + content_string
+                page_string = meta_lines + content_string
             else:
-                page_string = title_line + content_string
+                page_string = meta_lines + content_string
 
             page_string = strip_xml_tag(page_string)
             for key, value in replace_dict.items():
                 page_string = re.sub(key, value, page_string)
-            blog_plain.write(page_string + '\n---\n')
+            blog_plain.write(page_string + '\n========\n\n')
 
 # end def make_raw_blog
 
