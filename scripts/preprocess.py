@@ -69,14 +69,13 @@ def make_plain_blog():
             with io.open(filepath, 'r', encoding='utf-8') as file:
                 file_lines = file.readlines()[1:]
             # get title & find the end of front matter then remove front matter
-            meta_lines = ''
+            meta_lines = f'pageId: {os.path.basename(filepath)[11:].split(".")[0]}\n'
             end_front_mat = 0
             for i, line in enumerate(file_lines):
                 if 'title:' in line:
                     meta_lines += line
                 if line == '---\n':
                     end_front_mat = i + 1
-            meta_lines += f'pageId: {os.path.basename(filepath)[11:].split(".")[0]}\n'
             meta_lines += '---\n'
 
             page_string = ''
