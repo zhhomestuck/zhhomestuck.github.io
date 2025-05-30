@@ -71,10 +71,10 @@ def make_plain_blog():
             end_front_mat = 0
             for i, line in enumerate(file_lines):
                 if 'title:' in line:
-                    meta_lines += file_lines[i]
+                    meta_lines += line
                 if line == '---\n':
                     end_front_mat = i + 1
-            meta_lines += f'pageId: {os.path.basename(filepath)[:6]}\n'
+            meta_lines += f'pageId: {os.path.basename(filepath)[11].split(".")[0]}\n'
             meta_lines += '---\n'
 
             page_string = ''
