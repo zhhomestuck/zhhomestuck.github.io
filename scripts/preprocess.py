@@ -45,10 +45,18 @@ def make_plain_blog():
         '&#12300;'  : '「',
         '&#12301;'  : '」',
     }
+    log_name_keys = {
+        'Pesterlog': 'PESTERLOG',
+        'Spritelog': 'SPRITELOG',
+        'Journalog': 'JOURNALOG',
+        'Dialoglog': 'DIALOGLOG',
+        'Authorlog': 'AUTHORLOG',
+        'Tricksterlog': 'TRKSTRLOG',
+        '下收)': 'TRANSLATE'
+    }
 
     transcript_page_list = []
 
-    content_string = ''
     with open('blog-plain.txt', 'w+', encoding='utf-8') as blog_plain:
         for filepath in COMBINED_FILEPATH_LIST:
             if filepath in transcript_page_list:
@@ -71,26 +79,21 @@ def make_plain_blog():
                 for page_name in PAGE_LIST:
                     if page_name in content_string:
                         page_path = os.path.join(PAGE_DIR_PATH, page_name)
-                        with open(page_path, 'r', encoding='utf-8') as page_file:
-                            page_lines = page_file.readlines()[6:]
-                        page_string = title_line + ''.join(page_lines)
                         transcript_page_list.append(page_path)
+                        with open(page_path, 'r', encoding='utf-8') as f:
+                            page_lines = f.readlines()[6:]
+                        page_string = title_line + ''.join(page_lines)
                         break
-            elif 'LOG COMMENCE' in content_string and 'LOG END' in content_string:
-                if 'Pesterlog' in content_string:
-                    content_string = '|PESTERLOG|\n' + content_string
-                elif 'Spritelog' in content_string:
-                    content_string = '|SPRITELOG|\n' + content_string
-                elif 'Journalog' in content_string:
-                    content_string = '|JOURNALOG|\n' + content_string
-                elif 'Dialoglog' in content_string:
-                    content_string = '|DIALOGLOG|\n' + content_string
-                elif 'Authorlog' in content_string:
-                    content_string = '|AUTHORLOG|\n' + content_string
-                elif 'Tricksterlog' in content_string:
-                    content_string = '|TRKSTRLOG|\n' + content_string
-                elif '下收)' in content_string:
-                    content_string = '|TRANSLATE|\n' + content_string
+            elif 'LOG COMMENCE' in content_string:
+                found = False
+                for key, value in log_name_keys.items():
+                    if key in content_string:
+                        content_string = f'|{value}|\n' + content_string
+                        found = True
+                        break
+                if not found:
+                    content_string = '|UNKNOWLOG|\n' + content_string
+                page_string = title_line + content_string
             else:
                 page_string = title_line + content_string
 
@@ -107,8 +110,8 @@ def give_layouts():
     layoutname = ['post_s', 'post_sbahj', 'post_trickster', 'post_x2combo']
     for post_name in POST_LIST:
         post_path = os.path.join(POST_DIR_PATH, post_name)
-        with open(post_path, 'r', encoding='utf-8') as post_file:
-            file_string = post_file.read()
+        with open(post_path, 'r', encoding='utf-8') as f:
+            file_string = f.read()
         #if re.search('- sbahj', file_string) :
         #    continue
         for index, tag in enumerate(tags) :
@@ -123,8 +126,8 @@ def give_layouts():
                     'layout: post\n',
                     f'layout: {layoutname[index]}{suffix}\n'
                 )
-                with open(post_path, 'w', encoding='utf-8', newline='\n') as post_file:
-                    post_file.write(file_string)
+                with open(post_path, 'w', encoding='utf-8', newline='\n') as f:
+                    f.write(file_string)
 
 # def escape_markdowns():
 #     print('escaping markdown characters...')
