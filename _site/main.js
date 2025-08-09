@@ -59,11 +59,11 @@ function flashWarning() {
 
 function dynamicLinks() {
     // link to offical page
-    let urlNumberStart = document.URL.indexOf('00')+2;
-    let urlNumberEnd = urlNumberStart + 4;
-    let officialLinkNumber = parseInt(document.URL.substring(urlNumberStart,urlNumberEnd)) - 1900;
-    document.getElementById("official-link").href =
-        "https://www.homestuck.com/story/" + officialLinkNumber.toString();
+    // let urlNumberStart = document.URL.indexOf('00')+2;
+    // let urlNumberEnd = urlNumberStart + 4;
+    // let officialLinkNumber = parseInt(document.URL.substring(urlNumberStart,urlNumberEnd)) - 1900;
+    // document.getElementById("official-link").href =
+    //     "https://www.homestuck.com/story/" + officialLinkNumber.toString();
     // link to homestuckjz
     const newerPageLink = document.getElementById("newer-page-link");
     var isLastPage = newerPageLink && newerPageLink.className == "to-jz";
