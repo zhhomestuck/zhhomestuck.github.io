@@ -22,8 +22,8 @@
 	  AC_FL_RunContent = 0;
 	  //]]>
 	</script>
-	<script src='https://zhhomestuck.github.io/Viz_AC_RunActiveContent.js'/> <!-- handle medias & edited to link as absolute url to homestuck.com -->
-    <script src='https://zhhomestuck.github.io/main.js'/> <!-- linkOfficial, makeSpoilerLog and flashWarning -->
+	<script src='https://zhhomestuck.github.io/Viz_AC_RunActiveContent.js'/> <!-- handle medias -->
+    <script defer='defer' src='https://zhhomestuck.github.io/main.js'/> <!-- linkOfficial, makeSpoilerLog and flashWarning -->
     
     <b:skin><![CDATA[
       
@@ -664,21 +664,27 @@ width: auto;
     width: 280px;
     margin-right: -300px;
     border-right: solid 11px #535353;
+    background-color: #c6c6c6;
+    overflow: hidden; /* little hack to fit div to parent height */
   }
   #news {
     min-height: 550px; width: 650px;
     border: solid #c6c6c6;
     border-width: 7px 0 0 7px;
   }
+  #latest-update &gt; div {
+    border: solid #eeeeee;
+    border-width: 7px 7px 0 0;
+    padding-bottom: 100px;
+    margin-bottom: -100px; /* little hack to fit div to parent height */
+  }
   .latest-update-inner {
     min-height: 550px;
     background-color: #c6c6c6;
-    font-size: 13px;
-    line-height: 1.4;
-    text-align: left;
     padding-left: 4px;
-    border: solid #eeeeee;
-    border-width: 7px 7px 0 0;
+    line-height: 1.4;
+    font-size: 13px;
+    text-align: left;
   }
   .mobile .widget {
     background-color: #c6c6c6;
@@ -805,7 +811,7 @@ width: auto;
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d8375877150966622132\x26blogName\x3dHOMESTUCK%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AD%AF\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://zhhomestuck.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://zhhomestuck.blogspot.com/\x26vt\x3d3104347202098169045&#39;,
+              url: &#39;https://www.blogger.com/navbar/8375877150966622132?origin\x3dhttps://www.blogger.com&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -978,10 +984,6 @@ head.appendChild(script);
                           <b:if cond='data:top.showDummy'>
                             <data:top.dummyBootstrap/>
                           </b:if>
-                          <script type='text/javascript'>
-                              makeSpoilerLog();
-                              flashWarning();
-                            </script>
                         </b:includable>
                         <b:includable id='backlinkDeleteIcon' var='backlink'>
                           <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
@@ -1429,7 +1431,6 @@ head.appendChild(script);
                                       跳轉到</a></span> |
                                     <span id='pagefooter-official'>
                                       <b:if cond='data:olderPageUrl'>
-                                        <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a> |
                                         <a href='#' id='to-github-site' onmouseover='this.href = &quot;https://zhhomestuck.github.io/p/&quot; + this.parentElement.innerText.substr(this.parentNode.innerText.search(&quot;00&quot;), 6);' target='_blank'> Github站</a>
                                       </b:if>
                                       <br/>
@@ -1572,7 +1573,6 @@ head.appendChild(script);
                                   <!-- Null -->
                                   <span id='pagefooter-official'>
                                     <b:if cond='data:olderPageUrl'>
-                                      <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(document.URL.substr(document.URL.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a> |
                                       <a href='#' id='to-github-site' onmouseover='this.href = &quot;https://zhhomestuck.github.io/p/&quot; + this.parentElement.innerText.substr(this.parentNode.innerText.search(&quot;00&quot;), 6);' target='_blank'> Github站</a>
                                     </b:if>
                                     <br/>
@@ -1747,8 +1747,34 @@ head.appendChild(script);
                             <b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
                               <!-- check if this post is a x2combo page -->
                               <b:if cond='data:newerPageUrl'>
-                                <script type='text/javascript'>
+                                <script defer='defer' type='text/javascript'>
                                   // <![CDATA[
+function x2combo_makeSpoilerLog(parentNode) {
+    if (parentNode === undefined) {
+        parentNode = document;
+    }
+    let spoilerDOMs = [].slice.call(parentNode.getElementsByClassName("log-outer-outer"));
+    let spoilerDOMThatUseIdAttr = null;
+    if (parentNode === document) {
+        spoilerDOMThatUseIdAttr = parentNode.getElementById("log-outer-outer"); // beccause I fucked up
+    }
+    if (spoilerDOMThatUseIdAttr != null) {
+        spoilerDOMs.push(spoilerDOMThatUseIdAttr)
+    }
+    for (let i in spoilerDOMs) {
+        let spoilerName = "Pesterlog";
+        if ("name" in spoilerDOMs[i].attributes) {
+            spoilerName = spoilerDOMs[i].getAttribute("name");
+        }
+        spoilerDOMs[i].innerHTML = "<div class=\"log-outer\"><div><button type=\"button\"\
+            onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" \
+            onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\"\
+            onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\"\
+            title=\"點擊以顯示\">Show " + spoilerName + "</button></div><div class=\"spoiler\" style=\"display:none;\">\<div><button type=\"button\"\
+            onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\"\
+            title=\"點擊以隱藏\">Hide " + spoilerName + "</button></div><div class=\"log-inner\">" + spoilerDOMs[i].innerHTML + "</div></div></div><!-- LOG END -->";
+    }
+}
                                   let x2combo1 = document.getElementById("x2combo1");
                                   let x2combo2 = document.getElementById("x2combo2");
                                   x2combo2.style.display = "none";
@@ -1757,7 +1783,7 @@ head.appendChild(script);
                                   $("#x2combo2").load(x2newerLink+" .pagehead, .pagebody, .pagefoot", function() {
                                     $("#x2combo2 a.blog-pager-newer-link").text("==> ==>");
                                     $("#x2combo2 #pff").remove();
-                                    makeSpoilerLog(x2combo2);
+                                    x2combo_makeSpoilerLog(x2combo2);
                                     x2combo2.style.display = "table-cell";
                                   });
                                   $("#x2combo1 #blog-pager-newer-link-wrapper-id").html("<a href='#x2combo2'>==&gt; <span id='x2np'>==&gt;</span></a>");
@@ -2205,16 +2231,16 @@ head.appendChild(script);
 <b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'>
   <b:widget id='HTML2' locked='false' mobile='yes' title='' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&lt;div class=&quot;latest-update-inner&quot;&gt;&lt;img src=&quot;https://zhhomestuck.github.io/images/latestpages.png&quot; style=&quot;margin: 15px auto; position: absolute; left: 0; right: 0;&quot; /&gt;&lt;br /&gt;&lt;div style=&quot;text-align:left;margin-top:45px;&quot;&gt;最近更新&#65306;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+      <b:widget-setting name='content'><![CDATA[<div class="latest-update-inner"><img src="https://zhhomestuck.github.io/images/latestpages.png" style="margin: 15px auto; position: absolute; left: 0; right: 0;" /><br /><div style="text-align:left;margin-top:45px;">最近更新：</div><script type="text/javascript">
 let latest_postTitle = new Array(), latest_postUrl = new Array(), latest_postYearMonthDate = new Array();
 function loadarchive(a) {
-  if (&quot;entry&quot; in a.feed) {
+  if ("entry" in a.feed) {
     let d = a.feed.entry.length;
-    for (let h = 0; h &lt; d; h++) {
-      let j = &quot;&quot;, m = a.feed.entry[h], n = m.published.$t;
-      if (n) {n = n.substring(2, 4)+&quot;/&quot;+n.substring(5, 7)+&quot;/&quot;+n.substring(8, 10);}
-      for (var f = 0; f &lt; m.link.length; f++) {
-        if (m.link[f].rel == &quot;alternate&quot;) {
+    for (let h = 0; h < d; h++) {
+      let j = "", m = a.feed.entry[h], n = m.published.$t;
+      if (n) {n = n.substring(2, 4)+"/"+n.substring(5, 7)+"/"+n.substring(8, 10);}
+      for (var f = 0; f < m.link.length; f++) {
+        if (m.link[f].rel == "alternate") {
            j = m.link[f].href;
            break;
         }
@@ -2224,12 +2250,12 @@ function loadarchive(a) {
       latest_postYearMonthDate.push(n);
     }
   }
-  for(let a = 0; a &lt; latest_postTitle.length; ++a) {
-    document.write(latest_postYearMonthDate[a]+&#39; - &lt;a href=&quot;&#39;+latest_postUrl[a]+&#39;&quot;&gt;&quot;&#39;+latest_postTitle[a]+&#39;&quot;&lt;/a&gt;&#39;);
-    document.write(&#39;&lt;br&#39; + &#39;/&gt;&#39;);
+  for(let a = 0; a < latest_postTitle.length; ++a) {
+    document.write(latest_postYearMonthDate[a]+' - <a href="'+latest_postUrl[a]+'">"'+latest_postTitle[a]+'"</a>');
+    document.write('<br' + '/>');
   }
 }
-&lt;/script&gt;&lt;script src=&quot;http://zhhomestuck.blogspot.com/feeds/posts/summary/?alt=json-in-script&amp;amp;callback=loadarchive&amp;amp;max-results=32&quot;&gt;&lt;/script&gt;&lt;/div&gt;</b:widget-setting>
+</script><script src="http://zhhomestuck.blogspot.com/feeds/posts/summary/?alt=json-in-script&amp;callback=loadarchive&amp;max-results=24"></script></div>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
@@ -2245,40 +2271,38 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&lt;div id=&quot;new-inner&quot;&gt;&lt;img id=&quot;news-pic&quot; src=&quot;https://zhhomestuck.github.io/images/news.png&quot; style=&quot;margin: 8px auto 0 auto;&quot; /&gt;&lt;br /&gt;
-&lt;span class=&quot;progress-bar&quot; style=&quot;font-size:10px;&quot;&gt;&lt;b&gt;進度&#65306;已完成約 75%&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
-&lt;div style=&quot;font-size: 15px; font-weight: normal; line-height: 1.1; margin: 0 50px; text-align: left;&quot;&gt;
-&lt;hr /&gt;
-&lt;span style=&quot;font-style: italic;&quot;&gt;2022/01/22 - RM &lt;/span&gt;&lt;br /&gt;
-&lt;br /&gt;
-網站更新:&lt;br /&gt;
-- 修改Act1部份誤譯語句&lt;br /&gt;
-- 多個動畫改為官方提供的HTML5檔案 (最後更新2022/04/13) &lt;br /&gt; 
-- 所有圖片改成了&lt;span style=&quot;background: black;&quot;&gt;post-retcon版本&lt;/span&gt;&lt;br /&gt;
-- 加入了&lt;span style=&quot;background: black;&quot;&gt;Terezi password連結&#65292;會跳到簡中翻譯站的密碼頁&lt;/span&gt;
-&lt;br /&gt;&lt;br /&gt;
-由於Blogger的文章是以發佈日期與最後更新日期遞增排序的&#65292;更新後頁面順序亂掉的情況嚴重&#65292;我一時改不完&#12290;而在Github站不會有這問題&#12290;再次建議讀者移至&lt;a href=&quot;https://zhhomestuck.github.io/&quot;&gt;Github站&lt;/a&gt;閱讀&#12290;
-&lt;hr /&gt;
-&lt;span style=&quot;font-style: italic;&quot;&gt;2019/9/20 - RM (Updated 2022/01/22)&lt;/span&gt;&lt;br /&gt;
-&lt;br /&gt;
-本計畫的&#12300;&lt;a href=&quot;https://zhhomestuck.github.io/&quot;&gt;Github站&lt;/a&gt;&#12301;將是&#12300;發佈版&#12301;網站&#65292;之後將會優先在Github網站上設計頁面主題和維護&#65292;而Blogger僅作為測試以及修改內容的地方&#12290;不建議讀者在Blogger這裡閱讀&#65292;並應移至Github站以有最佳的體驗&#12290;&lt;br /&gt;
-&lt;br /&gt;
-兩邊網站的外觀設計仍依照MSPA的最後版本為準&#12290;&lt;br /&gt;
-&lt;br /&gt;
-翻譯站上的動畫連結將會慢慢的手動替換成官方的HTML5動畫&#12290;而將本站翻譯過的Flash檔案轉為HTML5動畫的工作已被擱置&#12290;&lt;br /&gt;
-&lt;br /&gt;
-若有頁面或連結壞掉的情況&#65292;可以在留言區回報&#12290;
-&lt;hr /&gt;
-&lt;span style=&quot;font-style: italic;&quot;&gt;2020/8/21 - RM&lt;/span&gt;&lt;br /&gt;
-&lt;br /&gt;
-已將人物&quot;Lord English&quot;的中譯名稱從&#12300;英格蘭領主&#12301;改為&#12300;英格利希領主&#12301;&#12290;
-&lt;hr /&gt;
-&lt;span style=&quot;font-style: italic;&quot;&gt;2020/7/19 - RM &lt;/span&gt;&lt;br /&gt;
-&lt;br /&gt;
-製作了&lt;a href=&quot;https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n&quot;&gt;Homestuck遊戲翻譯工具&lt;/a&gt;&#65292;歡迎利用&#12290;
-&lt;hr /&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;style&gt;.mobile #news-pic {width: 100vw; max-width: 336px;}&lt;/style&gt;</b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 8px auto 0 auto; width: 40%;" /><br />
+<span class="progress-bar" style="font-size:10px;"><b>進度：已完成約 75%</b></span>
+<div style="font-size: 15px; font-weight: normal; line-height: 1.1; margin: 8px 50px; text-align: left;">
+<span style="font-style: italic;">2024/02 - RM </span><br /><br />
+幾點知會在Blogger閱讀的讀者：<br />
+<br />
+1. 我們已不再更新，最新頁面的下一頁將連結到「簡中翻譯站」。我們與他們沒有任何合作關係。我們不保證所有翻譯內容的品質及正確性。<br />
+<br />
+2. 在Blogger閱讀可能會遇到一些圖片、動畫資源鏈結遺失或錯誤的問題，建議讀者移至<a href="https://zhhomestuck.github.io/">Github站</a>閱讀。<br />
+<br />
+3. <span style="text-decoration: line-through">若想閱讀英文原文內容，請務必下載<a>非官方Homestuck閱讀器</a>以獲得2021年以前Flash尚未停用前的閱讀體驗。</span>他沒了<br />
+<hr />
+<span style="font-style: italic;">2022/01/22 - RM </span><br />
+<br />
+網站更新:<br />
+- 修改Act1部份誤譯語句<br />
+- 多個動畫改為官方提供的HTML5檔案 (最後更新2022/04/13) <br /> 
+- 所有圖片改成了<span style="background: black;">post-retcon版本</span><br />
+- 加入了<span style="background: black;">Terezi password連結，會跳到簡中翻譯站的密碼頁</span>
+<br />
+<hr />
+<span style="font-style: italic;">2019/9/20 - RM (Updated 2022/01/22)</span><br />
+<br />
+本計畫的「<a href="https://zhhomestuck.github.io/">Github站</a>」將是「發佈版」網站，之後將會優先在Github網站上設計頁面主題和維護，而Blogger僅作為測試以及修改內容的地方。不建議讀者在這裡閱讀，並應移至Github站以有最佳的體驗。<br />
+<br />
+兩邊網站的外觀設計仍依照MSPA的最後版本為準。<br />
+<br />
+翻譯站上的動畫連結將會慢慢的手動替換成官方的HTML5動畫。而將本站翻譯過的Flash檔案轉為HTML5動畫的工作已被擱置。<br />
+<br />
+若有頁面或連結壞掉的情況，可以在留言區回報。<br />
+</div></div>
+<style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->

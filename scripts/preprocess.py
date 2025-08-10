@@ -170,11 +170,11 @@ def replace_strings():
         #if re.search('<table>', file_string) :
         #    file_string = re.sub('</?table>|</?tbody>|</?tr>|</?td>', '', file_string)
 
-        if re.search('AC_FL_RunContent', file_string):
-            file_string = file_string.replace(
-                " 'http://cdn.mspaintadventures.com/storyfiles",
-                " 'https://www.homestuck.com/flash"
-            )
+        # if re.search('AC_FL_RunContent', file_string):
+        #     file_string = file_string.replace(
+        #         " 'http://cdn.mspaintadventures.com/storyfiles",
+        #         " 'https://www.homestuck.com/flash"
+        #     )
 
         # sources host on github was non-security linked, change it to security
         file_string = file_string.replace(
@@ -182,21 +182,34 @@ def replace_strings():
             'https://zhhomestuck.github.io'
         )
 
-        # change mpsa link to homestuck.com
+        # change mspa link to homestuck.com
+        # file_string = re.sub(
+        #     'https?://(cdn|www).mspaintadventures.com/storyfiles/hs2/',
+        #     'https://www.homestuck.com/images/storyfiles/hs2/',
+        #     file_string
+        # )
+
+        # 2025-08-10
+        # change homestuck.com link to mspa
         file_string = re.sub(
-            'https?://(cdn|www).mspaintadventures.com/storyfiles/hs2/',
             'https://www.homestuck.com/images/storyfiles/hs2/',
+            'http://cdn.mspaintadventures.com/storyfiles/hs2/',
+            file_string
+        )
+        file_string = re.sub(
+            'https://www.homestuck.com/flash/',
+            'http://cdn.mspaintadventures.com/storyfiles/',
             file_string
         )
 
-        # unlink mpsa AC.js
+        # unlink mspa AC.js
         file_string = re.sub(
             r'<[=\"a-z ]*src=\"http.+AC_RunActiveContent\.js\"[=\"a-z ]*><\/script>',
             '',
             file_string
         )
 
-        # redirect site name
+        # redirect link to blogger site to this
         file_string = re.sub(
             r'https?://zhhomestuck.blogspot.(tw|com)/(p|[/0-9]{7})/',
             './',
