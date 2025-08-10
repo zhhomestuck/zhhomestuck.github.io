@@ -200,7 +200,7 @@ def replace_strings():
 
         # replace images
         file_string = re.sub(
-            'https://www.homestuck.com/images/storyfiles/',
+            'https://www.homestuck.com/images/storyfiles',
             f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
             file_string
         )
