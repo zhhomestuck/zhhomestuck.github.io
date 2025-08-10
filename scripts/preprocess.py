@@ -160,6 +160,9 @@ def give_layouts():
 #         with open(post_path, 'w', encoding='utf-8', newline='\n') as post_file:
 #             post_file.write(yml_string+story_string)
 
+IMAGE_RESOURCE_BASE_URI = 'https://homestuck.kici.moe/images'
+FLASH_RESOURCE_BASE_URI = 'https://homestuck.kici.moe/flash'
+
 def replace_strings():
     print('replacing strings and links...')
     for post_name in POST_LIST:
@@ -170,35 +173,40 @@ def replace_strings():
         #if re.search('<table>', file_string) :
         #    file_string = re.sub('</?table>|</?tbody>|</?tr>|</?td>', '', file_string)
 
-        # if re.search('AC_FL_RunContent', file_string):
-        #     file_string = file_string.replace(
-        #         " 'http://cdn.mspaintadventures.com/storyfiles",
-        #         " 'https://www.homestuck.com/flash"
-        #     )
-
         # sources host on github was non-security linked, change it to security
         file_string = file_string.replace(
             'http://zhhomestuck.github.io',
             'https://zhhomestuck.github.io'
         )
 
-        # change mspa link to homestuck.com
-        # file_string = re.sub(
-        #     'https?://(cdn|www).mspaintadventures.com/storyfiles/hs2/',
-        #     'https://www.homestuck.com/images/storyfiles/hs2/',
-        #     file_string
-        # )
+        # 2025-08-10: replace media uri to a living resource
+        # replace flashes
+        if re.search('AC_FL_RunContent', file_string):
+            file_string = re.sub(
+                " 'https?://(cdn|www).mspaintadventures.com/storyfiles",
+                f" '{FLASH_RESOURCE_BASE_URI}",
+                file_string
+            )
+            file_string = re.sub(
+                " 'https://www.homestuck.com/flash",
+                f" '{FLASH_RESOURCE_BASE_URI}",
+                file_string
+            )
+            file_string = re.sub(
+                " '/flash",
+                f" '{FLASH_RESOURCE_BASE_URI}",
+                file_string
+            )
 
-        # 2025-08-10
-        # change homestuck.com link to mspa
+        # replace images
         file_string = re.sub(
-            'https://www.homestuck.com/images/storyfiles/hs2/',
-            'http://cdn.mspaintadventures.com/storyfiles/hs2/',
+            'https://www.homestuck.com/images/storyfiles/',
+            f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
             file_string
         )
         file_string = re.sub(
-            'https://www.homestuck.com/flash/',
-            'http://cdn.mspaintadventures.com/storyfiles/',
+            'https?://(cdn|www).mspaintadventures.com/storyfiles',
+            f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
             file_string
         )
 
