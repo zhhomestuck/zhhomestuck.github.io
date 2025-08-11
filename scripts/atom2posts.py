@@ -26,6 +26,6 @@ for entry in feed.entries:
             f'date: {published_iso}\n'
         )
         if tags != '':
-            f.write(f'tags: [{tags}]\n')
+            f.write(f'tags:\n- {tags}\n')
         f.write('---\n')
         f.write(content)
