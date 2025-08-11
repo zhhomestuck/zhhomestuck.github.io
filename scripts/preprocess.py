@@ -183,29 +183,29 @@ def replace_strings():
         # replace flashes
         if re.search('AC_FL_RunContent', file_string):
             file_string = re.sub(
-                " 'https?://(cdn|www).mspaintadventures.com/storyfiles",
+                r" 'https?://(cdn|www)\.mspaintadventures\.com/storyfiles",
                 f" '{FLASH_RESOURCE_BASE_URI}",
                 file_string
             )
             file_string = re.sub(
-                " 'https://(www)?.homestuck.com/flash",
+                r" 'https://(www)?\.homestuck\.com/flash",
                 f" '{FLASH_RESOURCE_BASE_URI}",
                 file_string
             )
             file_string = re.sub(
-                " '/flash",
+                r" '/flash",
                 f" '{FLASH_RESOURCE_BASE_URI}",
                 file_string
             )
 
         # replace images
         file_string = re.sub(
-            'https://(www)?.homestuck.com/images/storyfiles',
+            r'https://(www)?\.homestuck\.com/images/storyfiles',
             f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
             file_string
         )
         file_string = re.sub(
-            'https?://(cdn|www).mspaintadventures.com/storyfiles',
+            r'https?://(cdn|www)\.mspaintadventures\.com/storyfiles',
             f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
             file_string
         )
