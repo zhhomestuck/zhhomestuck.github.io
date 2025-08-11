@@ -19,6 +19,7 @@ for entry in feed.entries:
     filename = entry['blogger_filename'].split('/')[-1]
     with open(f'./_posts/{published_ymd}-{filename}', 'w+', encoding='utf8') as f:
         # front matter
+        f.write('---\n')
         f.write(
             f'title: {title}\n'
             f'layout: post\n'
