@@ -29,7 +29,9 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
       - name: Install Ruby dependencies
-        run: gem install jekyll-import jekyll-paginate
+        run: |
+          gem install rexml safe_yaml
+          gem install jekyll-import jekyll-paginate
       - name: Import from XML
         run: ruby -r rubygems -e 'require "jekyll-import";JekyllImport::Importers::Blogger.run({"source"=>"./blog.xml","no-blogger-info"=>true,"replace-internal-link"=>false})'
       - name: Run preprocess script
