@@ -52,7 +52,7 @@ function vizFlashContentWrapper() {
             }
             for (var i in splited_src_list) {
                 let n = `<img src="${splited_src_list[i]}">`;
-                if (splited_href) {
+                if (splited_href_list) {
                     n = `<a href="${splited_href_list[i]}">${n}</a>`;
                 }
                 document.currentScript.insertAdjacentHTML('afterend', n);
