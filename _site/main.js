@@ -51,7 +51,7 @@ function flashWarning() {
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
         warning_node.style.padding = "2px";
-        warning_node.style.background = window.getComputedStyle(pb ,null).getPropertyValue('background-color');
+        warning_node.style.background = window.getComputedStyle(pb, null).getPropertyValue('background-color');
         warning_node.className = "flash_warning translated_flash_warning"
         pb.parentNode.insertBefore(warning_node, pb);
     }
@@ -69,7 +69,7 @@ function dynamicLinks() {
     var isLastPage = newerPageLink && newerPageLink.className == "to-jz";
     if (isLastPage) {
         document.getElementById("newer-page-link").href =
-            "https://linzhiyi622.github.io/homestuckjz.GitHub.io/" + (officialLinkNumber+1).toString() + ".html";
+            "https://linzhiyi622.github.io/homestuckjz.GitHub.io/" + (officialLinkNumber + 1).toString() + ".html";
     }
 }
 
@@ -101,8 +101,7 @@ function s_makeTapAltText() {
     tooltipImg.addEventListener('click', () => {
         if (isTapAltTextOn) {
             tooltipImg.removeChild(tooltipImg.lastChild);
-        }
-        else {
+        } else {
             tooltipImg.appendChild(tapAltText);
         }
         isTapAltTextOn = !isTapAltTextOn;
@@ -122,7 +121,7 @@ function s_makeLETooltipText() {
     }
     tooltipImg.addEventListener('mouseover', (event) => {
         LETooltip.style.left = (event.pageX + 10) + "px";
-        LETooltip.style.top = (event.pageY + 10)+ event.clientX + "px";
+        LETooltip.style.top = (event.pageY + 10) + event.clientX + "px";
         LETooltip.style.display = "block";
     });
     tooltipImg.addEventListener('mousemove', (event) => {
@@ -149,8 +148,7 @@ function importRuffleRS() {
     if (document.getElementsByTagName("object").length == 1) {
         let flashElem = document.getElementsByTagName("object")[0];
         flashURL = flashElem.data;
-    }
-    else if (document.getElementsByTagName("embed").length == 1) {
+    } else if (document.getElementsByTagName("embed").length == 1) {
         let flashElem = document.getElementsByTagName("embed")[0];
         flashElem.width = "650";
         flashElem.height = "450";
@@ -160,7 +158,7 @@ function importRuffleRS() {
     if (flashURL) {
         isTranslatedSWF = flashURL.includes("zhhomestuck.github.io/flash");
     }
-    
+
     let fontSourcesURL = [
         "/assets/font-swfs/courier-new-pixel.swf",
         "/assets/font-swfs/homestuck-fonts.swf",
@@ -183,7 +181,7 @@ function importRuffleRS() {
             "typewriter": ["Courier New", "新細明體", "Noto Sans CJK TC Bold"]
         };
     }
-    
+
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
         "fontSources": fontSourcesURL,

@@ -24,8 +24,7 @@ function vizFlashContentWrapper() {
     if (e) {
         AC_FL_RunContent.apply(null, arguments);
         warning_text = "";
-    }
-    else {
+    } else {
         let a = AC_GetArgs(arguments, ".swf", "movie", null, null);
         warning_text = '若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。'
             + `(<a href="/${window.location.pathname.replace(/^\/+/g, "")}?fl=1">顯示看看</a>)`;
@@ -38,8 +37,7 @@ function vizFlashContentWrapper() {
                         src="https://www.youtube.com/embed/${a.params.youtubeid}?modestbranding=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>\
                 </div>`
             );
-        }
-        else if (a.params.altimgsrc) {
+        } else if (a.params.altimgsrc) {
             if (a.params.altaudiosrc) {
                 let n = document.createElement("audio");
                 n.src = a.params.altaudiosrc;
@@ -53,14 +51,13 @@ function vizFlashContentWrapper() {
                 splited_href_list = a.params.altimghref.split("|");
             }
             for (var i in splited_src_list) {
-                let n = `<img src="${splited_src[i]}">`;
+                let n = `<img src="${splited_src_list[i]}">`;
                 if (splited_href) {
-                    n = `<a href="${splited_href[i]}">${n}</a>`;
+                    n = `<a href="${splited_href_list[i]}">${n}</a>`;
                 }
                 document.currentScript.insertAdjacentHTML('afterend', n);
             }
-        }
-        else {
+        } else {
             AC_FL_RunContent.apply(null, arguments);
             warning_text = ""; // warning is handled by flashWarning()
         }
