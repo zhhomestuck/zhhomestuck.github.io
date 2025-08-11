@@ -34,7 +34,7 @@ jobs:
       - name: Import posts from blogger Atom
         run: |
           pip install feedparser
-          mkdir ./_post
+          mkdir ./_posts
           python3 ./scripts/atom2posts.py
       - name: Run preprocess script
         run: python3 ./scripts/preprocess.py
