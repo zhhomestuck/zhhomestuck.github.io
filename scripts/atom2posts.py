@@ -8,7 +8,7 @@ with open('./blog.xml', 'r', encoding='utf-8') as f:
     atom_data = f.read()
 
 feed = feedparser.parse(atom_data)
-loop_count = 0
+
 for entry in feed.entries:
     if entry['blogger_type'] != 'POST':
         continue
@@ -30,6 +30,4 @@ for entry in feed.entries:
         f.write(yaml.dump(header))
         f.write('---\n')
         f.write(content)
-    loop_count += 1
-    if loop_count > 100:
-        break
+
