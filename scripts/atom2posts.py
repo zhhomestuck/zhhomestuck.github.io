@@ -3,6 +3,8 @@ import time
 import yaml
 import feedparser
 
+feedparser.SANITIZE_HTML = 0
+
 # Parse the Atom feed
 with open('./blog.xml', 'r', encoding='utf-8') as f:
     atom_data = f.read()
@@ -18,6 +20,7 @@ for entry in feed.entries:
     published_iso = entry['published']
     published_ymd = time.strftime(r'%Y-%m-%d', entry['published_parsed'])
     filename = entry['blogger_filename'].split('/')[-1]
+
     with open(f'./_posts/{published_ymd}-{filename}', 'w+', encoding='utf8') as f:
         # front matter
         f.write('---\n')
@@ -30,4 +33,3 @@ for entry in feed.entries:
         f.write(yaml.dump(header))
         f.write('---\n')
         f.write(content)
-
