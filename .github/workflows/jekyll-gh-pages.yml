@@ -30,13 +30,12 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Install Ruby dependencies
         run: |
-          gem install rss safe_yaml
-          gem install jekyll-import jekyll-paginate
-      - name: Import from Atom
+          gem install jekyll-paginate
+      - name: Import posts from blogger Atom
         run: |
-          pip install feedparser feedgen
-          python3 ./scripts/atom2rss.py
-          jekyll-import --source blog.rss
+          pip install feedparser
+          mkdir ./_post
+          python3 ./scripts/atom2posts.py
       - name: Run preprocess script
         run: python3 ./scripts/preprocess.py
       - name: Copy blog backups
