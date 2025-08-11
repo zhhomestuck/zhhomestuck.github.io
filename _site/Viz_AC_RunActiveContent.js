@@ -27,16 +27,16 @@ function vizFlashContentWrapper() {
     }
     else {
         let a = AC_GetArgs(arguments, ".swf", "movie", null, null);
-        warning_text = '若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/' + window.location.pathname.replace(/^\/+/g, "") + '?fl=1">顯示看看</a>)';
+        warning_text = '若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。'
+            + `(<a href="/${window.location.pathname.replace(/^\/+/g, "")}?fl=1">顯示看看</a>)`;
 
         if (a.params.youtubeid) {
-            document.write(
-                '<div id="o_flash-container">\
-                    <iframe id="youtube-flash-iframe"\
-                        style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;"\
-                        src="https://www.youtube.com/embed/'+ a.params.youtubeid + '?modestbranding=1"\
-                        frameborder="0" allowfullscreen="allowfullscreen"></iframe>\
-                </div>'
+            document.currentScript.insertAdjacentHTML(
+                'afterend',
+                `<div id="o_flash-container">\
+                    <iframe id="youtube-flash-iframe" style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;"\
+                        src="https://www.youtube.com/embed/${a.params.youtubeid}?modestbranding=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>\
+                </div>`
             );
         }
         else if (a.params.altimgsrc) {
@@ -47,15 +47,17 @@ function vizFlashContentWrapper() {
                 n.controls = "controls";
                 document.getElementsByClassName("pagebody")[0].appendChild(n);
             }
-            let splited_src = a.params.altimgsrc.split("|");
-            let splited_href = undefined;
+            let splited_src_list = a.params.altimgsrc.split("|");
+            let splited_href_list = undefined;
             if (a.params.altimghref) {
-                splited_href = a.params.altimghref.split("|");
+                splited_href_list = a.params.altimghref.split("|");
             }
-            for (var i in splited_src) {
-                let n = '<img src="' + splited_src[i] + '">';
-                if (splited_href) n = '<a href="' + splited_href[i] + '">' + n + "</a>";
-                document.write(n);
+            for (var i in splited_src_list) {
+                let n = `<img src="${splited_src[i]}">`;
+                if (splited_href) {
+                    n = `<a href="${splited_href[i]}">${n}</a>`;
+                }
+                document.currentScript.insertAdjacentHTML('afterend', n);
             }
         }
         else {
