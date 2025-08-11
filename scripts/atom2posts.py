@@ -21,11 +21,10 @@ for entry in feed.entries:
         # front matter
         f.write(
             f'title: {title}\n'
-            f'layout: post\n',
+            f'layout: post\n'
             f'date: {published_iso}\n'
         )
         if tags != '':
             f.write(f'tags: [{tags}]\n')
         f.write('---\n')
         f.write(content)
-    exit()
