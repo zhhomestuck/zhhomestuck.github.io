@@ -34,6 +34,7 @@ jobs:
           gem install jekyll-import jekyll-paginate
       - name: Import from Atom
         run: |
+          pip install feeparser feedgen
           python3 ./scripts/atom2rss.py
           jekyll-import --source blog.rss
       - name: Run preprocess script
