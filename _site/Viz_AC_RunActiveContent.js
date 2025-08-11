@@ -12,6 +12,11 @@ function ControlVersion(){var e,a;try{e=(a=new ActiveXObject("ShockwaveFlash.Sho
 
 // Copyright 2018 Viz Media & Homestuck
 function vizFlashContentWrapper() {
+    for (let i = 0; i < arguments.length; i++){
+        // make blogger post testable
+        arguments[i] = arguments[i].replace(/^\/flash/,"https://www.homestuck.com/flash");
+    }
+
     let e = ("1" == getUrlParameterByName("fl"));
     //if(DetectFlashVer(9,0,0)||e)
 
