@@ -33,7 +33,7 @@ jobs:
           gem install jekyll-paginate
       - name: Import posts from blogger Atom
         run: |
-          pip install feedparser
+          pip install feedparser pyyaml
           mkdir ./_posts
           python3 ./scripts/atom2posts.py
       - name: Run preprocess script
