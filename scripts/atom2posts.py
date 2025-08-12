@@ -3,14 +3,12 @@ import time
 import yaml
 import feedparser
 
-feedparser.SANITIZE_HTML = 0
-
 # Parse the Atom feed
 with open('./blog.xml', 'r', encoding='utf-8') as f:
     atom_data = f.read()
 
-feed = feedparser.parse(atom_data)
-
+feed = feedparser.parse(atom_data, sanitize_html=False)
+print('start transform blogger atom file to posts')
 for entry in feed.entries:
     if entry['blogger_type'] != 'POST':
         continue
@@ -28,8 +26,9 @@ for entry in feed.entries:
             'title': title,
             'layout': 'post',
             'date': published_iso,
-            'tags': [] if tag == '' else [tag]
         }
-        f.write(yaml.dump(header))
+        if tag != '':
+            header['tags'] = [tag]
+        f.write(yaml.safe_dump(header, allow_unicode=True))
         f.write('---\n')
         f.write(content)
