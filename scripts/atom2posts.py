@@ -4,7 +4,7 @@ import yaml
 import feedparser
 
 # Parse the Atom feed
-with open('./blog.xml', 'r', encoding='utf-8') as f:
+with open('./feed.atom', 'r', encoding='utf-8') as f:
     atom_data = f.read()
 
 feed = feedparser.parse(atom_data, sanitize_html=False)
