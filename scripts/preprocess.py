@@ -160,8 +160,14 @@ def give_layouts():
 #         with open(post_path, 'w', encoding='utf-8', newline='\n') as post_file:
 #             post_file.write(yml_string+story_string)
 
-IMAGE_RESOURCE_BASE_URI = 'https://homestuck.kici.moe/images'
-FLASH_RESOURCE_BASE_URI = 'https://homestuck.kici.moe/flash'
+IMAGE_RESOURCE_BASE_URI = (
+    ''
+    # 'https://homestuck.kici.moe/images'
+)
+FLASH_RESOURCE_BASE_URI = (
+    ''
+    # 'https://homestuck.kici.moe/flash'
+)
 
 def replace_strings():
     print('replacing strings and links...')
@@ -181,7 +187,8 @@ def replace_strings():
 
         # 2025-08-10: replace media uri to a living resource
         # replace flashes
-        if re.search('AC_FL_RunContent', file_string):
+        has_AC = re.search('AC_FL_RunContent', file_string)
+        if has_AC and FLASH_RESOURCE_BASE_URI != '':
             file_string = re.sub(
                 r" 'https?://(cdn|www)\.mspaintadventures\.com/storyfiles",
                 f" '{FLASH_RESOURCE_BASE_URI}",
@@ -199,16 +206,17 @@ def replace_strings():
             )
 
         # replace images
-        file_string = re.sub(
-            r'https://(www\.)?homestuck\.com/images/storyfiles',
-            f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
-            file_string
-        )
-        file_string = re.sub(
-            r'https?://(cdn|www)\.mspaintadventures\.com/storyfiles',
-            f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
-            file_string
-        )
+        if IMAGE_RESOURCE_BASE_URI != '':
+            file_string = re.sub(
+                r'https://(www\.)?homestuck\.com/images/storyfiles',
+                f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
+                file_string
+            )
+            file_string = re.sub(
+                r'https?://(cdn|www)\.mspaintadventures\.com/storyfiles',
+                f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
+                file_string
+            )
 
         # unlink mspa AC.js
         file_string = re.sub(
