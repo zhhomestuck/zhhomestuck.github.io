@@ -161,12 +161,12 @@ def give_layouts():
 #             post_file.write(yml_string+story_string)
 
 IMAGE_RESOURCE_BASE_URI = (
-    ''
-    # 'https://homestuck.kici.moe/images'
+    # ''
+    'https://homestuck.kici.moe/images'
 )
 FLASH_RESOURCE_BASE_URI = (
-    ''
-    # 'https://homestuck.kici.moe/flash'
+    # ''
+    'https://homestuck.kici.moe/flash'
 )
 
 def replace_strings():
