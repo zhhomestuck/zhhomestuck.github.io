@@ -1,2 +1,3 @@
 venv/
 _posts/
+_site/**/*.tar.gz
