@@ -17,9 +17,9 @@ function vizFlashContentWrapper() {
         arguments[i] = arguments[i].replace(/^\/flash/, "https://www.homestuck.com/flash");
     }
 
-    let isNoFlash = ("0" === getUrlParameterByName("fl"));
+    let isShowFlash = ("1" === getUrlParameterByName("fl"));
 
-    if (!isNoFlash) {
+    if (!isShowFlash) {
         AC_FL_RunContent.apply(null, arguments);
     } else {
         let a = AC_GetArgs(arguments, ".swf", "movie", null, null);
