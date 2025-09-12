@@ -18,8 +18,9 @@ function vizFlashContentWrapper() {
     }
 
     let isShowFlash = ("1" === getUrlParameterByName("fl"));
+    let isNoShowFlash = ("0" === getUrlParameterByName("fl"));
 
-    if (isShowFlash) {
+    if (!isNoShowFlash) {
         AC_FL_RunContent.apply(null, arguments);
     } else {
         let a = AC_GetArgs(arguments, ".swf", "movie", null, null);
