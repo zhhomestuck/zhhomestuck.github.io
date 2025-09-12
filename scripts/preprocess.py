@@ -161,11 +161,11 @@ def give_layouts():
 #             post_file.write(yml_string+story_string)
 
 IMAGE_RESOURCE_BASE_URI = (
-    'https://zhhsmedia.zeabur.com'
+    'https://zhhsmedia.zeabur.app'
     # 'https://homestuck.kici.moe/images'
 )
 FLASH_RESOURCE_BASE_URI = (
-    'https://zhhsmedia.zeabur.com'
+    'https://zhhsmedia.zeabur.app'
     # 'https://homestuck.kici.moe/flash'
 )
 
