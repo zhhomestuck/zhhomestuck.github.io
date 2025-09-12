@@ -45,15 +45,15 @@ function handleFlash() {
     }
     if (flashElem) {
         importRuffleRS();
-        // let pb = document.getElementsByClassName("pagebody")[0];
-        // let warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看，或是<a id=\"ruffle-import-link\" href=\"#\" onclick=\"importRuffleRS()\">嘗試使用ruffle播放</a>";
-        // let warning_node = document.createElement("div");
-        // warning_node.innerHTML = warning_text;
-        // warning_node.style.fontSize = "11px";
-        // warning_node.style.padding = "2px";
-        // warning_node.style.background = window.getComputedStyle(pb, null).getPropertyValue('background-color');
-        // warning_node.className = "flash_warning translated_flash_warning"
-        // pb.parentNode.insertBefore(warning_node, pb);
+        let pb = document.getElementsByClassName("pagebody")[0];
+        let warning_text = "此頁有Flash內容，將嘗試使用ruffle播放";
+        let warning_node = document.createElement("div");
+        warning_node.innerHTML = warning_text;
+        warning_node.style.fontSize = "11px";
+        warning_node.style.padding = "2px";
+        warning_node.style.background = window.getComputedStyle(pb, null).getPropertyValue('background-color');
+        warning_node.className = "flash_warning translated_flash_warning"
+        pb.parentNode.insertBefore(warning_node, pb);
     }
 }
 
