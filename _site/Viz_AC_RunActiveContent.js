@@ -69,7 +69,7 @@ function vizFlashContentWrapper() {
             warningNode.style.padding = "2px";
             warningNode.style.background = window.getComputedStyle(pagebody, null).getPropertyValue('background-color');
             warningNode.className = "flash_warning viz_flash_warning"
-            pb.parentNode.insertBefore(warningNode, pagebody);
+            pagebody.parentNode.insertBefore(warningNode, pagebody);
         }
     }
 }
