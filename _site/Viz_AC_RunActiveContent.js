@@ -63,7 +63,7 @@ function vizFlashContentWrapper() {
             let warningNode = document.createElement("div");
             warningNode.innerHTML = (
                 "現正檢現Viz版本的動畫/互動內容。若要查看原始內容(將自動啟用Ruffle)，請"
-                + `(<a href="/${window.location.pathname.replace(/^\/+/g, "")}?fl=1">點選此處</a>。`
+                + `<a href="/${window.location.pathname.replace(/^\/+/g, "")}?fl=1">點選此處</a>。`
             );;
             warningNode.style.fontSize = "11px";
             warningNode.style.padding = "2px";
