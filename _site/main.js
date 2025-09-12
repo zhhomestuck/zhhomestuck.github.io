@@ -172,11 +172,12 @@ function importRuffleRS() {
     };
     if (isTranslatedSWF) {
         fontSourcesURL = [
-            // "/assets/font-swfs/courbdPMingLiU.swf",
-            // "/assets/font-swfs/NotoSerifCJKTC.swf",
+            // commented because font fallback is not implemented (2024-02-28)
+            "/assets/font-swfs/cour.ttf",
+            "/assets/font-swfs/courbd.ttf",
+            "/assets/font-swfs/PMingLiU.ttf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
         ];
-        // font fallback is not implemented (2024-02-28)
         defaultFonts = {
             "sans": ["Verdana", "Noto Sans CJK TC Bold"],
             "serif": ["Times New Roman", "新細明體", "Noto Sans CJK TC Bold"],
