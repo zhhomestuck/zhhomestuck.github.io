@@ -172,10 +172,9 @@ function importRuffleRS() {
     };
     if (isTranslatedSWF) {
         fontSourcesURL = [
-            // commented because font fallback is not implemented (2024-02-28)
-            "/assets/font-swfs/cour.ttf",
-            "/assets/font-swfs/courbd.ttf",
-            "/assets/font-swfs/PMingLiU.ttf",
+            // commented because font fallback is not implemented (2025-09-13)
+            // "/assets/font-swfs/courbd.ttf",
+            // "/assets/font-swfs/PMingLiU.ttf",
             "/assets/font-swfs/NotoSansCJKTC.swf",
         ];
         defaultFonts = {
