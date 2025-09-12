@@ -188,6 +188,7 @@ function importRuffleRS() {
     window.RufflePlayer.config = {
         "fontSources": fontSourcesURL,
         "defaultFonts": defaultFonts,
+        "autoplay": "on",
         "logLevel": "info",
     };
 }
