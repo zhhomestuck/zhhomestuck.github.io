@@ -187,8 +187,9 @@ def replace_strings():
 
         # 2025-08-10: replace media uri to a living resource
         # replace flashes
-        has_AC = re.search('AC_FL_RunContent', file_string)
-        if has_AC and FLASH_RESOURCE_BASE_URI != '':
+        has_ac = re.search('AC_FL_RunContent', file_string)
+        has_viz_flash = re.search('vizFlashContentWrapper', file_string)
+        if (has_ac or has_viz_flash) and FLASH_RESOURCE_BASE_URI != '':
             file_string = re.sub(
                 r" 'https?://(cdn|www)\.mspaintadventures\.com/storyfiles",
                 f" '{FLASH_RESOURCE_BASE_URI}",

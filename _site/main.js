@@ -142,9 +142,9 @@ function importRuffleRS() {
     imported.src = 'https://unpkg.com/@ruffle-rs/ruffle';
     document.head.appendChild(imported);
 
-    let ruffleImportLink = document.getElementById("ruffle-import-link");
-    ruffleImportLink.removeAttribute("onclick");
-    ruffleImportLink.removeAttribute("href");
+    // let ruffleImportLink = document.getElementById("ruffle-import-link");
+    // ruffleImportLink.removeAttribute("onclick");
+    // ruffleImportLink.removeAttribute("href");
 
     let flashURL = undefined;
     if (document.getElementsByTagName("object").length == 1) {
