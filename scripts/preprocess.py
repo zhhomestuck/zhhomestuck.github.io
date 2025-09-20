@@ -171,7 +171,7 @@ FLASH_RESOURCE_BASE_URI = (
 
 def replace_strings():
     print('replacing strings and links...')
-    for post_name in POST_LIST:
+    for post_name in COMBINED_FILEPATH_LIST:
         post_path = os.path.join(POST_DIR_PATH, post_name)
         with open(post_path, encoding='utf-8') as post_file:
             file_string = post_file.read()

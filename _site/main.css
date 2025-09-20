@@ -185,17 +185,16 @@ div.log-inner span img {
   height: 0;
   padding: 69.23076923076923% 0 0 0;
 }
-#cotent_container, #animation_container, #_preload_div_ {
-  /* for official HTML5 content */
-  padding: 0;
-  margin: 0 auto;
-}
 
-/* for HTML5 animation */
+/* for Viz's HTML5 content */
 .pagebody iframe {
   border: none;
   overflow: hidden;
   margin-bottom: 15px;
+}
+#cotent_container, #animation_container, #_preload_div_ {
+  padding: 0;
+  margin: 0 auto;
 }
 
 /* Pagefoot */

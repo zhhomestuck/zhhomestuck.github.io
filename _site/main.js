@@ -149,11 +149,11 @@ function importRuffleRS() {
     let flashURL = undefined;
     if (document.getElementsByTagName("object").length == 1) {
         let flashElem = document.getElementsByTagName("object")[0];
+        flashElem.style.width = "100%";
         flashURL = flashElem.data;
     } else if (document.getElementsByTagName("embed").length == 1) {
         let flashElem = document.getElementsByTagName("embed")[0];
-        flashElem.width = "650";
-        flashElem.height = "450";
+        flashElem.style.width = "100%";
         flashURL = flashElem.src;
     }
     let isTranslatedSWF = false;
