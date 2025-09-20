@@ -171,10 +171,9 @@ FLASH_RESOURCE_BASE_URI = (
 
 def replace_strings():
     print('replacing strings and links...')
-    for post_name in COMBINED_FILEPATH_LIST:
-        post_path = os.path.join(POST_DIR_PATH, post_name)
-        with open(post_path, encoding='utf-8') as post_file:
-            file_string = post_file.read()
+    for file_path in COMBINED_FILEPATH_LIST:
+        with open(file_path, encoding='utf-8') as f:
+            file_string = f.read()
 
         #if re.search('<table>', file_string) :
         #    file_string = re.sub('</?table>|</?tbody>|</?tr>|</?td>', '', file_string)
@@ -246,8 +245,8 @@ def replace_strings():
             'class="log-outer-outer"'
         )
 
-        with open(post_path, 'w', encoding='utf-8', newline='\n') as post_file:
-            post_file.write(file_string)
+        with open(file_path, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(file_string)
 
 if __name__ == '__main__':
     print('pre-processing...')
