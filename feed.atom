@@ -4210,12 +4210,12 @@ K &lt; L。V &gt; L。&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] ==&gt;</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00250/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00250/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
 &lt;!-- 動 --&gt;&lt;div&gt;&lt;!--內文開始--&gt; &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-25T09:53:17.321Z</blogger:created>
-    <published>2015-02-25T09:57:00.003Z</published>
-    <updated>2022-01-30T18:05:27.170Z</updated>
+    <published>2015-02-25T09:57:00.004Z</published>
+    <updated>2025-09-20T23:10:46.381Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/002150.html</blogger:filename>
@@ -18649,7 +18649,7 @@ CALLIOPE: &lt;b&gt;咻 咻 咻 咻 咻 咻！&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] Terezi：播放唱片。</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/03722/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/03722/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;
 &lt;div&gt;&lt;!--內文開始--&gt;
 &lt;span id="no-flash-text-05625"&gt;&lt;/span&gt;&lt;div id="music-list-05625"&gt;&amp;gt; &lt;span class="music_list_05625_element" onclick="play_terezi_music_file_03722(0);"&gt;troll員警&lt;/span&gt;&lt;br /&gt;&amp;gt; &lt;span class="music_list_05625_element" onclick="play_terezi_music_file_03722(1);this.color='#ccc';"&gt;將鑄成的浩劫&lt;/span&gt;&lt;br /&gt; &amp;gt; &lt;span class="music_list_05625_element" onclick="play_terezi_music_file_03722(2);this.color='#ccc';"&gt;滑冰場的轟隆聲&lt;/span&gt;&lt;br /&gt; &amp;gt; &lt;span class="music_list_05625_element" onclick="play_terezi_music_file_03722(3);this.color='#ccc';"&gt;未命名的錄音&lt;/span&gt;&lt;br /&gt; &amp;gt; &lt;span class="music_list_05625_element" onclick="play_terezi_music_file_03722(4);this.color='#ccc';"&gt;機密房&lt;/span&gt;&lt;br /&gt; &amp;gt; &lt;span class="music_list_05625_element" onclick="play_terezi_music_file_03722(5);this.color='#ccc';"&gt;我是一位午夜幫&lt;/span&gt;&lt;/div&gt;&lt;br /&gt; 你選了幾條適合解決犯罪的音樂來調整到正確的心情。在這種氛圍下，解決任何案件都不會花太久時間。&lt;br /&gt;&lt;!--內文結束--&gt;&lt;/div&gt;&lt;!-- &lt;script type="text/javascript"&gt;
 var playingTereziMusicId = -1, terezi_musics = new Array(6), music_list_elements;
@@ -18690,8 +18690,8 @@ function play_terezi_music_file_03722(i) {
 &lt;/style&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2016-07-02T08:11:26.935Z</blogger:created>
-    <published>2016-07-02T08:19:00Z</published>
-    <updated>2022-01-30T18:27:59.291Z</updated>
+    <published>2016-07-02T08:19:00.001Z</published>
+    <updated>2025-09-20T23:08:37.890Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2016/07/005625.html</blogger:filename>
@@ -33931,14 +33931,14 @@ CALLIOPE: &lt;b&gt;如果他現在不是在把我們炸出來生的路上，他�
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] 決鬥!</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00090/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動畫 --&gt; &lt;div&gt;&lt;!--內文開始--&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00090/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動畫 --&gt; &lt;div&gt;&lt;!--內文開始--&gt;&lt;br /&gt;
 ([&amp;gt;攻擊])&lt;br /&gt;
 ([&amp;gt;棄權])&lt;br /&gt;
 &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-09T14:01:48.664Z</blogger:created>
-    <published>2015-02-09T14:06:00.007Z</published>
-    <updated>2022-01-30T17:45:19.879Z</updated>
+    <published>2015-02-09T14:06:00.008Z</published>
+    <updated>2025-09-20T23:11:39.828Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/001990.html</blogger:filename>
@@ -57818,25 +57818,12 @@ a.blog-pager-newer-link-jump {line-height: 30px !important;}
     </author>
     <title>[A6I2] ==&gt;</title>
     <content type='html'>&lt;img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04811.gif" /&gt;&lt;!-- 圖 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;&lt;br /&gt;
-&lt;!--內文結束--&gt; &lt;/div&gt;&lt;div id="note"&gt;(由於下一頁屬於&lt;b&gt;特殊動畫頁面&lt;/b&gt;，本頁的下頁連結將連到&lt;b&gt;官方網頁&lt;/b&gt;，看完之後請再&lt;a href="http://zhhomestuck.blogspot.tw/2017/04/006715.html"&gt;點選這裡以繼續&lt;/a&gt;。)&lt;/div&gt;&lt;br/&gt;
-&lt;br/&gt;
-&lt;div&gt;&lt;div class='pagefoot-jump'&gt;&lt;span style="float: left;"&gt;&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;a class="blog-pager-newer-link-jump" href="https://www.homestuck.com/story/004815"&gt; [S][A6I2] ???&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;br/&gt;
-&lt;style&gt;
-.pagebody div.pagefoot-jump {padding: 0px; text-align: left; font-size: 24px; font-family: Verdana, Arial, Helvetica, 微軟正黑體, 'Microsoft JhengHei', monospace;}
-.mobile .pagebody div.pagefoot-jump {padding:20px 5px;}
-a.blog-pager-newer-link-jump {line-height: 30px !important;}
-.mobile .pagefoot-jump a.blog-pager-newer-link-jump {height: auto; width: 100%; display: block; font-size: 1em;}
-.pagefoot {visibility: hidden; margin-top: -25px; padding: 0px;}
-.mobile .pagefoot {visibility: hidden; margin-top: -35px; padding: 0px;}
-#pagefooter-option {padding: 25px 20px 15px 25px; visibility: visible !important; background-color: #eeeeee;}
-.mobile #pagefooter-option {visibility: hidden; padding: 35px 20px 20px 10px ;}
-.pagefoot #blog-pager-newer-link-wrapper-id, .mobile .pagefoot #blog-pager-newer-link-id {display: none;}
-&lt;/style&gt;
+&lt;!--內文結束--&gt; &lt;/div&gt;&lt;div id="note"&gt;(由於下一頁屬於&lt;b&gt;特殊動畫頁面&lt;/b&gt;，下一頁請讀者自行至&lt;a href="https://www.homestuck.com/story/004815" target="_blank"&gt;&lt;b&gt;官方網頁&lt;/b&gt;&lt;/a&gt;觀看。)&lt;/div&gt;
 </content>
     <blogger:metaDescription/>
     <blogger:created>2017-03-28T15:04:55.041Z</blogger:created>
-    <published>2017-03-31T15:59:00.004Z</published>
-    <updated>2022-01-23T08:27:56.747Z</updated>
+    <published>2017-03-31T15:59:00.005Z</published>
+    <updated>2025-09-20T23:23:46.764Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2017/03/006714.html</blogger:filename>
@@ -63698,12 +63685,12 @@ Karkat現在無法被更精細的描繪，他實在太生氣了，以致於讓�
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S][o] 滴。答。滴...</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 1612px;" src="https://zhhomestuck.github.io/assets/03857/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio:650/1612;" src="https://zhhomestuck.github.io/assets/03857/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;
 &lt;!--內文結束--&gt; &lt;/div&gt;&lt;img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room65.gif" /&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2016-07-21T16:56:36.020Z</blogger:created>
-    <published>2016-07-22T05:10:00.001Z</published>
-    <updated>2022-01-30T21:53:31.459Z</updated>
+    <published>2016-07-22T05:10:00.002Z</published>
+    <updated>2025-09-20T23:07:34.149Z</updated>
     <blogger:location/>
     <category scheme='tag:blogger.com,1999:blog-8375877150966622132' term='s'/>
     <blogger:filename>/2016/07/005760.html</blogger:filename>
@@ -73736,7 +73723,7 @@ Rose把&lt;b&gt;鍊金臺&lt;/b&gt;移回下層了因為她要修正那邊的建
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S][o] 滴。答。</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 1612px;" src="https://zhhomestuck.github.io/assets/03848/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;&lt;br/&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/1612;" src="https://zhhomestuck.github.io/assets/03848/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;&lt;br/&gt;
 &lt;div id="log-outer-outer"&gt;&lt;!-- LOG COMMENCE --&gt;&lt;br /&gt;
 &lt;span style="color: #005682;"&gt; AG: 我賭你剛死的方式沒什麼好榮耀的.&lt;br/&gt;
 &lt;br/&gt;
@@ -73754,8 +73741,8 @@ AG: 至少還沒. ::::)&lt;/span&gt;&lt;!-- LOG END --&gt;&lt;br /&gt;
   &lt;/div&gt;&lt;!--內文結束--&gt; &lt;/div&gt;&lt;img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room56.gif" /&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2016-07-20T06:08:16.360Z</blogger:created>
-    <published>2016-07-20T06:11:00.004Z</published>
-    <updated>2022-01-30T21:52:36.112Z</updated>
+    <published>2016-07-20T06:11:00.005Z</published>
+    <updated>2025-09-20T23:08:25.013Z</updated>
     <blogger:location/>
     <category scheme='tag:blogger.com,1999:blog-8375877150966622132' term='s'/>
     <blogger:filename>/2016/07/005751.html</blogger:filename>
@@ -83778,8 +83765,8 @@ Make her a member of the Midnight Crew!&lt;br/&gt;
     </author>
     <title>[S][A6I2] ??? </title>
     <content type='html'>&lt;div&gt;&lt;!--內文開始--&gt;&lt;br /&gt;
-&lt;span style="font-weight: bold; font-size: 16px; font-family: Courier, Verdana, Arial, monospace;"&gt;http://www.homestuck.com/DOTA&lt;/span&gt;&lt;br /&gt;
-&lt;b&gt;D&lt;/b&gt;eath &lt;b&gt;o&lt;/b&gt;f &lt;b&gt;t&lt;/b&gt;he &lt;b&gt;A&lt;/b&gt;uther&lt;br /&gt;
+&lt;span style="font-weight: bold; font-size: 16px; font-family: Courier, Verdana, Arial, monospace;"&gt;&lt;a href="http://www.homestuck.com/DOTA" target="_blank"&gt;http://www.homestuck.com/DOTA&lt;/a&gt;&lt;/span&gt;&lt;br /&gt;
+Death of the Auther&lt;br /&gt;
 &lt;br /&gt;
 延伸閱讀：
 &lt;a href="http://zhhomestuck.blogspot.tw/p/interview.html"&gt;Bryan Lee O'Malley 訪問 Andrew Hussie&lt;/a&gt;&lt;br /&gt;
@@ -83787,8 +83774,8 @@ Make her a member of the Midnight Crew!&lt;br/&gt;
 &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2017-03-31T11:25:58.622Z</blogger:created>
-    <published>2017-03-31T16:00:00.001Z</published>
-    <updated>2022-01-23T08:29:48.289Z</updated>
+    <published>2017-03-31T16:00:00.003Z</published>
+    <updated>2025-09-20T23:25:02.666Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2017/04/006715.html</blogger:filename>
@@ -93953,12 +93940,12 @@ U點。&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>TT：縮小。</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00140/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00140/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
 &lt;!-- 動 --&gt; &lt;div&gt;&lt;!--內文開始--&gt;  &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-14T08:27:21.311Z</blogger:created>
-    <published>2015-02-14T08:27:00.004Z</published>
-    <updated>2022-01-30T17:53:43.640Z</updated>
+    <published>2015-02-14T08:27:00.005Z</published>
+    <updated>2025-09-20T23:11:17.724Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/002040.html</blogger:filename>
@@ -97392,7 +97379,7 @@ n=110001 6=000110 B=001011 I=010010&lt;br /&gt;
     </author>
     <title>[S] Act 6 中場休息 3。</title>
     <content type='html'>&lt;br /&gt;
-&lt;iframe style="border:none; width: 650px; height: 460px;" src="https://zhhomestuck.github.io/Openbound/part1/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;iframe style="border:none; width:100%; aspect-ratio:650/460;" src="https://zhhomestuck.github.io/Openbound/part1/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt;(Game hosted on Github)&lt;br /&gt;
 &lt;br /&gt;
 [如果遊戲無法正常運作，請嘗試使用其他的瀏覽器。建議使用Chrome或Firefox。]&lt;br /&gt;
@@ -97402,8 +97389,8 @@ n=110001 6=000110 B=001011 I=010010&lt;br /&gt;
 &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2017-09-26T17:44:08.359Z</blogger:created>
-    <published>2017-09-28T10:00:00.002Z</published>
-    <updated>2025-05-30T08:54:26.897Z</updated>
+    <published>2017-09-28T10:00:00.004Z</published>
+    <updated>2025-09-20T23:07:50.761Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2017/09/007163.html</blogger:filename>
@@ -99359,7 +99346,7 @@ a.blog-pager-newer-link-jump {line-height: 30px !important;}
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] Rose：使出少女迴轉，直衝前門。</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00388/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00388/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt; (小遊戲中的文字翻譯下收)
 &lt;div class="log-outer-outer" name="Text/Image"&gt;&lt;!-- LOG COMMENCE --&gt;
 ([&amp;gt;侵害])(綠)&lt;br /&gt;
@@ -99381,8 +99368,8 @@ a.blog-pager-newer-link-jump {line-height: 30px !important;}
 &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-03-19T14:31:36.848Z</blogger:created>
-    <published>2015-03-19T14:54:00.010Z</published>
-    <updated>2022-01-30T18:03:36.743Z</updated>
+    <published>2015-03-19T14:54:00.011Z</published>
+    <updated>2025-09-20T23:10:24.269Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/03/002288.html</blogger:filename>
@@ -100131,12 +100118,12 @@ Rose在線上。&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] 搞什麼飛機這太離譜了</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00418/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 圖 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00418/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 圖 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;
 &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-03-24T13:55:17.841Z</blogger:created>
-    <published>2015-03-24T13:55:00.004Z</published>
-    <updated>2022-01-30T18:53:24.155Z</updated>
+    <published>2015-03-24T13:55:00.005Z</published>
+    <updated>2025-09-20T23:10:03.676Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/03/002318.html</blogger:filename>
@@ -103780,7 +103767,7 @@ DAVESPRITE: 想睡多久隨便你媽的又不干我的事&lt;/span&gt;
     </author>
     <title>[S] [A6I3] ==&gt;</title>
     <content type='html'>&lt;br /&gt;
-&lt;iframe style="border:none; width: 650px; height: 460px;" src="https://zhhomestuck.github.io/Openbound/part2/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;iframe style="border:none; width:100%; aspect-ratio:650/460;" src="https://zhhomestuck.github.io/Openbound/part2/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt;(Game hosted on Github)&lt;br /&gt;
 &lt;br /&gt;
 [如果遊戲無法正常運作，請嘗試使用其他的瀏覽器。建議使用Chrome或Firefox。]&lt;br /&gt;
@@ -103789,8 +103776,8 @@ DAVESPRITE: 想睡多久隨便你媽的又不干我的事&lt;/span&gt;
 &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2018-02-20T17:12:07.119Z</blogger:created>
-    <published>2018-02-22T05:34:00Z</published>
-    <updated>2018-02-24T10:58:58.101Z</updated>
+    <published>2018-02-22T05:34:00.002Z</published>
+    <updated>2025-09-20T23:07:45.964Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2018/02/007208.html</blogger:filename>
@@ -125870,11 +125857,11 @@ John當然在深沈的睡眠之中。看起來他像往常一樣做著擾人的�
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>==&gt;</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00177/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt; &lt;div&gt;&lt;!--內文開始--&gt;  &lt;!--內文結束--&gt; &lt;/div&gt;</content>
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00177/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt; &lt;div&gt;&lt;!--內文開始--&gt;  &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-16T07:26:46.542Z</blogger:created>
-    <published>2015-02-16T07:26:00.005Z</published>
-    <updated>2022-01-30T17:54:04.276Z</updated>
+    <published>2015-02-16T07:26:00.006Z</published>
+    <updated>2025-09-20T23:11:11.784Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/002077.html</blogger:filename>
@@ -128006,7 +127993,7 @@ AA: 我說不上來!&lt;/span&gt;&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>我？？==&gt;</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00424/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00424/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;!-- 動 --&gt;&lt;div&gt;&lt;!--內文開始--&gt; &lt;!-- LOG COMMENCE --&gt;&lt;div class="log-outer"&gt;&lt;div&gt;&lt;button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示文字"&gt;Show Spritelog&lt;/button&gt;&lt;/div&gt;&lt;div class="spoiler" style="display: none;"&gt;&lt;div&gt;&lt;button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字"&gt;Hide Spritelog&lt;/button&gt;&lt;/div&gt;&lt;div class="log-inner"&gt;&lt;!-- LOG COMMENCE --&gt;&lt;br/&gt;
 &lt;span style="color: #0715cd"&gt;JOHN: 我？？&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;
 &lt;span style="color: #00d5f2"&gt;NANNASPRITE: 對。John，你。&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;
@@ -128019,8 +128006,8 @@ AA: 我說不上來!&lt;/span&gt;&lt;br /&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- LOG END --&gt; &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-03-27T14:27:37.807Z</blogger:created>
-    <published>2015-03-27T14:32:00.006Z</published>
-    <updated>2022-01-30T18:51:34.174Z</updated>
+    <published>2015-03-27T14:32:00.007Z</published>
+    <updated>2025-09-20T23:08:47.928Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/03/002324.html</blogger:filename>
@@ -133848,11 +133835,11 @@ Troll是非常易怒且暴力的種族。而其中有些人又比其它人脾氣
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] John：演奏一段難以忘懷的鋼琴樂曲。</title>
-    <content type='html'>&lt;iframe style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00077/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt; &lt;!-- 動畫 --&gt; &lt;div&gt;&lt;!--內文開始--&gt; (以後有聲的頁數均標以[S]表示) &lt;!--內文結束--&gt; &lt;/div&gt;&lt;style&gt; span#note {display:none;}&lt;/style&gt; </content>
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00077/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt; &lt;!-- 動畫 --&gt; &lt;div&gt;&lt;!--內文開始--&gt; (以後有聲的頁數均標以[S]表示) &lt;!--內文結束--&gt; &lt;/div&gt;&lt;style&gt; span#note {display:none;}&lt;/style&gt; </content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-09T10:35:08.827Z</blogger:created>
-    <published>2015-02-09T10:37:00.004Z</published>
-    <updated>2022-01-30T16:39:34.709Z</updated>
+    <published>2015-02-09T10:37:00.006Z</published>
+    <updated>2025-09-20T23:12:18.630Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/001977.html</blogger:filename>
@@ -150628,11 +150615,11 @@ function blinkAnim() {
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] ==&gt;</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00186/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt; &lt;div&gt;&lt;!--內文開始--&gt; &lt;b&gt;核心精靈&lt;/b&gt;被&lt;b&gt;丑角玩偶&lt;/b&gt;雛型化了。 &lt;!--內文結束--&gt; &lt;/div&gt;</content>
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00186/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt; &lt;div&gt;&lt;!--內文開始--&gt; &lt;b&gt;核心精靈&lt;/b&gt;被&lt;b&gt;丑角玩偶&lt;/b&gt;雛型化了。 &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-16T08:07:19.762Z</blogger:created>
-    <published>2015-02-16T08:08:00.004Z</published>
-    <updated>2022-01-30T17:54:56.500Z</updated>
+    <published>2015-02-16T08:08:00.005Z</published>
+    <updated>2025-09-20T23:11:05.324Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/002086.html</blogger:filename>
@@ -159328,15 +159315,15 @@ FAA: 0_0&lt;/span&gt;&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>==&gt;</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00138/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動畫 --&gt; &lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00138/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動畫 --&gt; &lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt;[將游標放在介面的按鈕上。 -AH]&lt;br /&gt;
 &lt;br /&gt;
 (譯註：出現的字由左到右依序是：)&lt;br /&gt;
 (選擇  修改  配置  用具註冊表  原素倉庫  探索合成圖書館  煉金臺附錄) &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-14T07:46:18.560Z</blogger:created>
-    <published>2015-02-14T07:46:00.005Z</published>
-    <updated>2022-01-30T17:53:00.371Z</updated>
+    <published>2015-02-14T07:46:00.006Z</published>
+    <updated>2025-09-20T23:11:25.629Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/002038.html</blogger:filename>
@@ -160272,7 +160259,7 @@ TG: 我沒辦法看這垃圾對不起&lt;/span&gt;&lt;br /&gt;
     </author>
     <title>[S] [A6I3] ==&gt;</title>
     <content type='html'>&lt;br /&gt;
-&lt;iframe style="border:none; width: 650px; height: 460px;" src="https://zhhomestuck.github.io/Openbound/part3/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
+&lt;iframe style="border:none; width:100%; aspect-ratio:650/460;" src="https://zhhomestuck.github.io/Openbound/part3/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt;(Game hosted on Github)&lt;br /&gt;
 &lt;br /&gt;
 [如果遊戲無法正常運作，請嘗試使用其他的瀏覽器。建議使用Chrome或Firefox。]&lt;br /&gt;
@@ -160281,8 +160268,8 @@ TG: 我沒辦法看這垃圾對不起&lt;/span&gt;&lt;br /&gt;
 &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2018-07-25T05:58:32.507Z</blogger:created>
-    <published>2018-08-04T08:13:00Z</published>
-    <updated>2018-08-04T08:13:04.291Z</updated>
+    <published>2018-08-04T08:13:00.002Z</published>
+    <updated>2025-09-20T23:07:40.906Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2018/08/007298.html</blogger:filename>
@@ -162190,7 +162177,7 @@ a.blog-pager-newer-link-jump {line-height: 30px !important;}
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] ==&gt;==&gt;==&gt;！！！！！！！！！</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00393/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00393/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt;(小遊戲中的文字翻譯下收)
 &lt;div class="log-outer-outer" name="Text/Image"&gt;&lt;!-- LOG COMMENCE --&gt;
 (SHALE IMP=頁岩魔精)&lt;br /&gt;
@@ -162203,8 +162190,8 @@ a.blog-pager-newer-link-jump {line-height: 30px !important;}
 &lt;/div&gt;&lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-03-21T08:40:29.539Z</blogger:created>
-    <published>2015-03-21T08:44:00.005Z</published>
-    <updated>2022-01-30T18:17:25.977Z</updated>
+    <published>2015-03-21T08:44:00.006Z</published>
+    <updated>2025-09-20T23:10:18.040Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/03/002293.html</blogger:filename>
@@ -162771,11 +162758,11 @@ PCG: 滑頭史力克需要那隻青蛙的基因，而由於我蠢翻天的失職
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] John：咬一口蘋果。</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00246/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;</content>
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00246/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-23T11:58:29.551Z</blogger:created>
-    <published>2015-02-23T11:59:00.002Z</published>
-    <updated>2022-01-30T17:56:27.566Z</updated>
+    <published>2015-02-23T11:59:00.003Z</published>
+    <updated>2025-09-20T23:10:57.370Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/002146.html</blogger:filename>
@@ -165727,7 +165714,7 @@ FAA: 哎呦&lt;/span&gt;&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] John：查看Pesterchum。</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00110/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt; &lt;!-- 動畫 --&gt;&lt;div&gt;&lt;!--內文開始--&gt; &lt;!-- LOG COMMENCE --&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00110/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt; &lt;!-- 動畫 --&gt;&lt;div&gt;&lt;!--內文開始--&gt; &lt;!-- LOG COMMENCE --&gt;&lt;br /&gt;
 &lt;div class="log-outer"&gt;&lt;div&gt;&lt;button class="button" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" title="點擊以顯示文字" type="button"&gt;Show Pesterlog&lt;/button&gt;&lt;/div&gt;&lt;div class="spoiler" style="display: none;"&gt;&lt;div&gt;&lt;button class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字" type="button"&gt;Hide Pesterlog&lt;/button&gt;&lt;/div&gt;&lt;div class="log-inner"&gt;&lt;!-- LOG COMMENCE --&gt;&lt;br /&gt;
 -- 庭園靈知者 gardenGnostic&lt;span style="color: #4ac925;"&gt; [GG]&lt;/span&gt; 於16:34 開始敲 外胚生物學家 ectoBiologist&lt;span style="color: #0715cd;"&gt; [EB]&lt;/span&gt; --&lt;br /&gt;
 &lt;br /&gt;
@@ -165851,8 +165838,8 @@ FAA: 哎呦&lt;/span&gt;&lt;br /&gt;
 &lt;!-- LOG END --&gt;  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- LOG END --&gt; &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-11T09:12:45.552Z</blogger:created>
-    <published>2015-02-11T09:37:00.004Z</published>
-    <updated>2022-04-13T14:00:23.606Z</updated>
+    <published>2015-02-11T09:37:00.005Z</published>
+    <updated>2025-09-20T23:11:32.145Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/002010.html</blogger:filename>
@@ -184654,21 +184641,12 @@ AG: 阿阿阿阿阿阿阿阿哈哈哈哈哈哈哈哈!&lt;/span&gt;&lt;br /&gt;
     <content type='html'>&lt;img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04105_1.gif" /&gt;&lt;br /&gt;
 &lt;img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04105_2.gif" /&gt;&lt;br /&gt;
 &lt;img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04105_3.gif" /&gt;&lt;!-- 圖 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;&lt;br /&gt;
-&lt;!--內文結束--&gt; &lt;/div&gt;&lt;div id="note"&gt;(由於下一頁屬於&lt;b&gt;特殊動畫頁面&lt;/b&gt;，本頁的下頁連結將連到&lt;b&gt;官方網頁&lt;/b&gt;，看完之後請再&lt;a href="http://zhhomestuck.blogspot.tw/2016/08/006009.html"&gt;點選這裡以繼續&lt;/a&gt;。)&lt;/div&gt;&lt;div&gt;&lt;div class='pagefoot-jump'&gt;&lt;span style="float: left;"&gt;&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;a class="blog-pager-newer-link-jump" href="http://www.homestuck.com/story/04109" target="_blank"&gt; [S] 級聯反應。&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;style&gt;.pagebody div.pagefoot-jump {padding: 0px; text-align: left; font-size: 24px; font-family: Verdana, Arial, Helvetica, 微軟正黑體, 'Microsoft JhengHei', monospace;}
-.mobile .pagebody div.pagefoot-jump {padding:20px 5px;}
-a.blog-pager-newer-link-jump {line-height: 30px !important;}
-.mobile .pagefoot-jump a.blog-pager-newer-link-jump {height: auto; width: 100%; display: block; font-size: 1em;}
-.pagefoot {visibility: hidden; margin-top: -25px; padding: 0px;}
-.mobile .pagefoot {visibility: hidden; margin-top: -35px; padding: 0px;}
-#pagefooter-option {padding: 25px 20px 15px 25px; visibility: visible !important; background-color: #eeeeee;}
-.mobile #pagefooter-option {visibility: hidden; padding: 35px 20px 20px 10px ;}
-.pagefoot #blog-pager-newer-link-wrapper-id, .mobile .pagefoot #blog-pager-newer-link-id {display: none;}
-&lt;/style&gt;&lt;br /&gt;
+&lt;!--內文結束--&gt; &lt;/div&gt;&lt;div class="note"&gt;(由於下一頁屬於&lt;b&gt;特殊動畫頁面&lt;/b&gt;，下一頁請讀者自行至&lt;a href="http://www.homestuck.com/story/04109" target="_blank"&gt;&lt;b&gt;官方網頁&lt;/b&gt;&lt;/a&gt;觀看。)&lt;/div&gt;
 </content>
     <blogger:metaDescription/>
     <blogger:created>2016-08-24T11:24:28.506Z</blogger:created>
-    <published>2016-08-24T16:15:00.009Z</published>
-    <updated>2022-05-16T03:25:23.551Z</updated>
+    <published>2016-08-24T16:15:00.010Z</published>
+    <updated>2025-09-20T23:23:02.088Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2016/08/006008.html</blogger:filename>
@@ -185215,12 +185193,12 @@ a.blog-pager-newer-link-jump {line-height: 30px !important;}
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>==&gt;</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00423/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00423/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;
 &lt;div&gt;&lt;!--內文開始--&gt; &lt;!-- LOG COMMENCE --&gt;&lt;div class="log-outer"&gt;&lt;div&gt;&lt;button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示文字"&gt;Show Spritelog&lt;/button&gt;&lt;/div&gt;&lt;div class="spoiler" style="display: none;"&gt;&lt;div&gt;&lt;button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字"&gt;Hide Spritelog&lt;/button&gt;&lt;/div&gt;&lt;div class="log-inner"&gt;&lt;!-- LOG COMMENCE --&gt;&lt;br /&gt;&lt;span style="color: #00d5f2"&gt;NANNASPRITE: 於是，關係著這境界的中心處的命運，這些勢力在其上方上決鬥，並陷入永恆的僵局之中。&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style="color: #00d5f2"&gt;NANNASPRITE: 是的，他們一直用這種方式決鬥... 直到你出現！&lt;/span&gt; &lt;!-- LOG END --&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- LOG END --&gt; &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-03-25T07:41:34.065Z</blogger:created>
-    <published>2015-03-25T07:43:00.003Z</published>
-    <updated>2022-01-30T18:51:29.300Z</updated>
+    <published>2015-03-25T07:43:00.004Z</published>
+    <updated>2025-09-20T23:09:56.111Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/03/002323.html</blogger:filename>
@@ -193668,7 +193646,7 @@ uu: 而且你會留下。一具真的令人屏息的屍體。&lt;/span&gt;&lt;br
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] ==&gt;</title>
-    <content type='html'>&lt;iframe style="border:none; width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00082/embed.html"&gt; &lt;/iframe&gt;&lt;!-- 動畫 --&gt; &lt;br /&gt;
+    <content type='html'>&lt;iframe style="border:none; width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00082/embed.html"&gt; &lt;/iframe&gt;&lt;!-- 動畫 --&gt; &lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt;&lt;br /&gt;街道空無一人。微風撇過隔開鄰房的空隙，猶如輕輕掃過鏤空的簧管，或者該說，一個被掠奪的郵箱，製造出一個熟悉的音符。這是荒寂為令其樂器合調而持續著的演奏。&amp;nbsp; &lt;br /&gt;
 &lt;br /&gt;
 這是你的十三歲生日，就如之前那十二年，你感覺生活中缺少了些什麼。目前正回避你的游戲，只是個在無形謎語人的劇本內的最新戲法，所帶來的並不是歡樂，而是空虛。他粗糙的計劃是比普通扒手更無趣的惡作劇，其謎面本身就是泛泛之物。這是全然消散的謎團，如月亮黯淡的倒影，隨著一顆懷著疑問的卵石掉進深淵。這是最狠毒的謎語。&amp;nbsp; &lt;br /&gt;
@@ -193680,8 +193658,8 @@ uu: 而且你會留下。一具真的令人屏息的屍體。&lt;/span&gt;&lt;br
 &amp;nbsp;你有種感覺，這將是漫長的一天。 &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-09T12:26:02.741Z</blogger:created>
-    <published>2015-02-09T12:42:00.006Z</published>
-    <updated>2022-01-30T17:28:49.096Z</updated>
+    <published>2015-02-09T12:42:00.007Z</published>
+    <updated>2025-09-20T23:11:49.058Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/001982.html</blogger:filename>
@@ -204648,7 +204626,7 @@ Ms. Paint真是一名有格調的繁華之國淑女，簡直就像是優雅及�
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] ==&gt;</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00307/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00307/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt; 你思忖這雨究竟會不會停。雨在月初起就已經在下，久到它早已忘記為何而下，甚至忘記如何滅火。彷彿在某處有位熱情的神，在天地之間編織著這些音弦，準備一場祂害怕永遠不可能演出的交響曲。於是雨下啊下，下啊下，指揮棒遲遲不升起。&lt;br /&gt;
 &lt;br /&gt;
 你真恨死了這季節。&lt;br /&gt;
@@ -204658,8 +204636,8 @@ Ms. Paint真是一名有格調的繁華之國淑女，簡直就像是優雅及�
 &lt;!--內文結束--&gt; &lt;/div&gt;&lt;div id="note"&gt;※原詩出自托馬斯·斯特恩斯·艾略特著作《荒原》（The Waste Land）。&lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-03-07T14:12:21.735Z</blogger:created>
-    <published>2015-03-07T14:51:00.009Z</published>
-    <updated>2022-01-30T18:12:36.133Z</updated>
+    <published>2015-03-07T14:51:00.010Z</published>
+    <updated>2025-09-20T23:10:32.927Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/03/002207.html</blogger:filename>
@@ -210124,13 +210102,13 @@ JADE: @_@&lt;/span&gt;&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>John：檢查CD架上的遊戲。</title>
-    <content type='html'>&lt;iframe scrolling="no"  style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00031/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00031/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt; 
 你曾投入無數的時光在這些琳瑯滿目的優良作品上  &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-07T14:47:49.717Z</blogger:created>
-    <published>2015-02-07T14:51:00.007Z</published>
-    <updated>2022-01-30T17:38:29.249Z</updated>
+    <published>2015-02-07T14:51:00.008Z</published>
+    <updated>2025-09-20T23:12:05.906Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/001931.html</blogger:filename>
@@ -228078,7 +228056,7 @@ OMWMWOMWEWEWEWOWOWEOWMOWOEOEOWMWMWMWMWOMWMOWOEOEOWMWMWMW&lt;/b&gt;&lt;/span&gt;&
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>[S] John，把武器撿回來繼續戰鬥！</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00400/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00400/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 動 --&gt;&lt;br /&gt;
 &lt;div&gt;&lt;!--內文開始--&gt;
 (小遊戲中的文字翻譯下收)
 &lt;div class="log-outer-outer" name="Text/Image"&gt;&lt;!-- LOG COMMENCE --&gt;(決鬥！)&lt;br /&gt;
@@ -228096,8 +228074,8 @@ OMWMWOMWEWEWEWOWOWEOWMOWOEOEOWMWMWMWMWOMWMOWOEOEOWMWMWMW&lt;/b&gt;&lt;/span&gt;&
 &lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-03-21T09:11:06.513Z</blogger:created>
-    <published>2015-03-21T09:15:00.004Z</published>
-    <updated>2022-01-30T18:16:11.685Z</updated>
+    <published>2015-03-21T09:15:00.005Z</published>
+    <updated>2025-09-20T23:10:10.276Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/03/002300.html</blogger:filename>
@@ -240590,12 +240568,12 @@ TG依然在敲你。但是另一個好友也上線了。&lt;br /&gt;
       <blogger:type>BLOGGER</blogger:type>
     </author>
     <title>==&gt;</title>
-    <content type='html'>&lt;iframe scrolling="no" style="width: 650px; height: 450px;" src="https://zhhomestuck.github.io/assets/00251/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 圖 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;&lt;br /&gt;
+    <content type='html'>&lt;iframe scrolling="no" style="width:100%; aspect-ratio: 650/450;" src="https://zhhomestuck.github.io/assets/00251/embed.html"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;!-- 圖 --&gt;&lt;div&gt;&lt;!--內文開始--&gt;&lt;br /&gt;
 &lt;b&gt;核心&lt;/b&gt;分裂了。分成兩半各行其道，只留下&lt;b&gt;精靈體&lt;/b&gt;。&lt;!--內文結束--&gt; &lt;/div&gt;</content>
     <blogger:metaDescription/>
     <blogger:created>2015-02-25T10:00:11.458Z</blogger:created>
-    <published>2015-02-25T10:01:00.005Z</published>
-    <updated>2022-01-30T18:10:29.818Z</updated>
+    <published>2015-02-25T10:01:00.006Z</published>
+    <updated>2025-09-20T23:10:40.164Z</updated>
     <blogger:location/>
     <category/>
     <blogger:filename>/2015/02/002151.html</blogger:filename>
