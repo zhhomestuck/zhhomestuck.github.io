@@ -157,8 +157,12 @@ function importRuffleRS() {
     }
     flashElem.style.width = "100%";
     flashElem.style.height = "auto";
-    if (flashElem.width != "" && flashElem.height != "") {
+    if (flashElem.width != "" && flashElem.height != "" && 
+        !flashElem.width.endsWith("%") && !flashElem.height.endsWith("%")
+    ) {
         flashElem.style.aspectRatio = flashElem.width + "/" + flashElem.height;
+    } else {
+        flashElem.style.aspectRatio = "650/450";
     }
     flashElem.width = "";
     flashElem.height = "";
