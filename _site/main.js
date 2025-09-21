@@ -189,6 +189,7 @@ function importRuffleRS() {
         "fontSources": fontSourcesURL,
         "defaultFonts": defaultFonts,
         "autoplay": "on",
+        // "unmuteOverlay": "hidden",
         "logLevel": "info",
     };
 }

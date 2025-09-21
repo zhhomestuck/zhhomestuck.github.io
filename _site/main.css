@@ -197,6 +197,13 @@ div.log-inner span img {
   margin: 0 auto;
 }
 
+/* make Ruffle's splash screen fit the website style */
+.pagebody #splash-screen {
+  background: #c6c6c6 !important;
+  filter: grayscale(100%);
+}
+
+
 /* Pagefoot */
 .pagefoot {
   padding: 20px 20px 10px 20px;
