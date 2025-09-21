@@ -147,15 +147,22 @@ function importRuffleRS() {
     // ruffleImportLink.removeAttribute("href");
 
     let flashURL = undefined;
+    let flashElem = undefined;
     if (document.getElementsByTagName("object").length == 1) {
-        let flashElem = document.getElementsByTagName("object")[0];
-        flashElem.style.width = "100%";
+        flashElem = document.getElementsByTagName("object")[0];
         flashURL = flashElem.data;
     } else if (document.getElementsByTagName("embed").length == 1) {
-        let flashElem = document.getElementsByTagName("embed")[0];
-        flashElem.style.width = "100%";
+        flashElem = document.getElementsByTagName("embed")[0];
         flashURL = flashElem.src;
     }
+    flashElem.style.width = "100%";
+    flashElem.style.height = "auto";
+    if (flashElem.style.aspectRatio == ""
+        && flashElem.width != "" && flashElem.height != "") {
+        flashElem.style.aspectRatio = flashElem.width + "/" + flashElem.height;
+    }
+    flashElem.width = "";
+    flashElem.height = "";
     let isTranslatedSWF = false;
     if (flashURL) {
         isTranslatedSWF = flashURL.includes("zhhomestuck.github.io/flash");
