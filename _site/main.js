@@ -157,8 +157,7 @@ function importRuffleRS() {
     }
     flashElem.style.width = "100%";
     flashElem.style.height = "auto";
-    if (flashElem.style.aspectRatio == ""
-        && flashElem.width != "" && flashElem.height != "") {
+    if (flashElem.width != "" && flashElem.height != "") {
         flashElem.style.aspectRatio = flashElem.width + "/" + flashElem.height;
     }
     flashElem.width = "";
