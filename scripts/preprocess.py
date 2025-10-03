@@ -213,7 +213,7 @@ def replace_strings():
                 file_string
             )
             file_string = re.sub(
-                r'https?://(cdn|www)\.mspaintadventures\.com/storyfiles(?!=/hs2/waywardvagabond)',
+                r'https?://(cdn|www)\.mspaintadventures\.com/storyfiles(?!/hs2/waywardvagabond)',
                 f'{IMAGE_RESOURCE_BASE_URI}/storyfiles',
                 file_string
             )
